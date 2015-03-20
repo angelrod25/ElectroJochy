@@ -21,30 +21,34 @@ namespace ElectroJochy.Formularios
             InitializeComponent();
         }
 
-        private void GuardarButtom_Click(object sender, EventArgs e)
+        private void GuardarButtom_Click(object sender, EventArgs e) // TODO: Revisar login que permite acceso si textbox1 y textbox2 son iguales.
         {
+
+
 
             if (UsuarioTextBox.Text == "" || UsuarioTextBox.Text == "")
             {
                 MessageBox.Show("Favor Ingresar Usuario y Contraseña.");
                 return;
-            }    
-               
+            }
 
-            Usuario.BuscarUsuario(UsuarioTextBox.Text, ContrasenaTextBox.Text);  
 
-            //if(UsuarioTextBox.Text == Usuario.Contrasena && ContrasenaTextBox.Text == Usuario.Contrasena)
-         //   {
+            Usuario.BuscarUsuario(UsuarioTextBox.Text, ContrasenaTextBox.Text);
+            Usuario.Usuario = UsuarioTextBox.Text;
+            Usuario.Contrasena = ContrasenaTextBox.Text;
+
+            if(UsuarioTextBox.Text == Usuario.Contrasena && ContrasenaTextBox.Text == Usuario.Contrasena)
+            {
                 FormularioPrincipal Main = new FormularioPrincipal();
                 Main.Show();
                 this.Hide();
 
-           // }
+            }
 
-          //  else
-            //{           
-              //  MessageBox.Show("Nombre de Usuario o Contraseña Incorrecta. ", "Error",  MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            else
+            {           
+               MessageBox.Show("Nombre de Usuario o Contraseña Incorrecta. ", "Error",  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
        
         }
 
