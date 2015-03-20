@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectroJochyUI", "ElectroJochy\ElectroJochyUI.csproj", "{721E3ADD-8D24-45EF-8EF3-3BEED288E608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{8B8E15D8-AD37-4A3D-9A41-4FBDA1497029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{42E0FD89-7D21-4ED7-97B8-64CFC0F9E202}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{721E3ADD-8D24-45EF-8EF3-3BEED288E608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721E3ADD-8D24-45EF-8EF3-3BEED288E608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721E3ADD-8D24-45EF-8EF3-3BEED288E608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721E3ADD-8D24-45EF-8EF3-3BEED288E608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B8E15D8-AD37-4A3D-9A41-4FBDA1497029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B8E15D8-AD37-4A3D-9A41-4FBDA1497029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B8E15D8-AD37-4A3D-9A41-4FBDA1497029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B8E15D8-AD37-4A3D-9A41-4FBDA1497029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E0FD89-7D21-4ED7-97B8-64CFC0F9E202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E0FD89-7D21-4ED7-97B8-64CFC0F9E202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E0FD89-7D21-4ED7-97B8-64CFC0F9E202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E0FD89-7D21-4ED7-97B8-64CFC0F9E202}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
