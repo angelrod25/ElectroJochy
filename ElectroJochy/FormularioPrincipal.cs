@@ -38,7 +38,8 @@ namespace ElectroJochy
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Registros.rUsuarios RegU = new Registros.rUsuarios();
+            RegU.Show();
         }
     }
 }

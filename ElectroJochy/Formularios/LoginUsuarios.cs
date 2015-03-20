@@ -33,17 +33,18 @@ namespace ElectroJochy.Formularios
 
             Usuario.BuscarUsuario(UsuarioTextBox.Text, ContrasenaTextBox.Text);  
 
-            if(UsuarioTextBox.Text == Usuario.Contrasena && ContrasenaTextBox.Text == Usuario.Contrasena)
-            {
+            //if(UsuarioTextBox.Text == Usuario.Contrasena && ContrasenaTextBox.Text == Usuario.Contrasena)
+         //   {
                 FormularioPrincipal Main = new FormularioPrincipal();
                 Main.Show();
+                this.Hide();
 
-            }
+           // }
 
-            else
-            {           
-                MessageBox.Show("Nombre de Usuario o Contraseña Incorrecta. ", "Error",  MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+          //  else
+            //{           
+              //  MessageBox.Show("Nombre de Usuario o Contraseña Incorrecta. ", "Error",  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
        
         }
 
