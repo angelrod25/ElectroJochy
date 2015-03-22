@@ -42,9 +42,12 @@
             // 
             // UsuariosDataGrid
             // 
+            this.UsuariosDataGrid.AllowUserToAddRows = false;
+            this.UsuariosDataGrid.AllowUserToDeleteRows = false;
             this.UsuariosDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.UsuariosDataGrid.Location = new System.Drawing.Point(12, 57);
             this.UsuariosDataGrid.Name = "UsuariosDataGrid";
+            this.UsuariosDataGrid.ReadOnly = true;
             this.UsuariosDataGrid.Size = new System.Drawing.Size(769, 296);
             this.UsuariosDataGrid.TabIndex = 0;
             // 
