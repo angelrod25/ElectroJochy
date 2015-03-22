@@ -41,5 +41,11 @@ namespace ElectroJochy
             Registros.rUsuarios RegU = new Registros.rUsuarios();
             RegU.Show();
         }
+
+        private void usuariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.cUsuarios cUsuario = new Consultas.cUsuarios();
+            cUsuario.Show();
+        }
     }
 }

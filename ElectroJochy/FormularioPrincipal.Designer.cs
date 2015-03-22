@@ -62,7 +62,7 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
@@ -79,6 +79,7 @@
             this.usuariosToolStripMenuItem1.Name = "usuariosToolStripMenuItem1";
             this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.usuariosToolStripMenuItem1.Text = "Usuarios";
+            this.usuariosToolStripMenuItem1.Click += new System.EventHandler(this.usuariosToolStripMenuItem1_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -91,7 +92,7 @@
             // usuariosToolStripMenuItem2
             // 
             this.usuariosToolStripMenuItem2.Name = "usuariosToolStripMenuItem2";
-            this.usuariosToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.usuariosToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
             this.usuariosToolStripMenuItem2.Text = "Usuarios";
             // 
             // FormularioPrincipal
