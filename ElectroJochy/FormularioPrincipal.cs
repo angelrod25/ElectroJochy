@@ -47,5 +47,16 @@ namespace ElectroJochy
             Consultas.cUsuarios cUsuario = new Consultas.cUsuarios();
             cUsuario.Show();
         }
+
+        private void usuariosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+                Reportes.ReporteUsuarios Reporte = new Reportes.ReporteUsuarios();
+                Reporte.Show();
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Creado por Angel J. Rodríguez para Programación Aplicada I.\n Universidad Católica Nordestana.\n \n Email: Angelrguez25@Gmailcom. \n \n Creditos para el Profesor Enel Almonte por su acesoría.", "Información del Sistema");
+        }
     }
 }

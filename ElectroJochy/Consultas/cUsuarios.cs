@@ -13,13 +13,6 @@ namespace ElectroJochy.Consultas
 {
     public partial class cUsuarios : Form
     {
-        private int datoEncontrado;
-
-        public int DatoEncontrado
-        {
-            get { return datoEncontrado; }
-        }
-
 
         public cUsuarios()
         {
