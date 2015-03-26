@@ -64,5 +64,11 @@ namespace ElectroJochy
             Registros.rArticulos rArticulos = new Registros.rArticulos();
             rArticulos.Show();
         }
+
+        private void articulosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.cArticulos cArticulos = new Consultas.cArticulos();
+            cArticulos.Show();
+        }
     }
 }

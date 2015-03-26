@@ -42,10 +42,10 @@
             this.ExistenciaTextBox = new System.Windows.Forms.TextBox();
             this.IdSuplidorTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.CategoriaComboBox = new System.Windows.Forms.ComboBox();
             this.LimpiarButtom = new System.Windows.Forms.Button();
             this.BorrarButtom = new System.Windows.Forms.Button();
             this.GuardarButtom = new System.Windows.Forms.Button();
+            this.IdCategoriaTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -149,24 +149,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(16, 306);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 13);
+            this.label7.Size = new System.Drawing.Size(61, 13);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Categoría:";
-            // 
-            // CategoriaComboBox
-            // 
-            this.CategoriaComboBox.FormattingEnabled = true;
-            this.CategoriaComboBox.Items.AddRange(new object[] {
-            "Electricos",
-            "Plomería",
-            "Madera",
-            "Pinturas",
-            "Agregados",
-            "Químicos"});
-            this.CategoriaComboBox.Location = new System.Drawing.Point(79, 303);
-            this.CategoriaComboBox.Name = "CategoriaComboBox";
-            this.CategoriaComboBox.Size = new System.Drawing.Size(223, 21);
-            this.CategoriaComboBox.TabIndex = 13;
+            this.label7.Text = "IdCategoria";
             // 
             // LimpiarButtom
             // 
@@ -212,16 +197,24 @@
             this.GuardarButtom.UseVisualStyleBackColor = true;
             this.GuardarButtom.Click += new System.EventHandler(this.GuardarButtom_Click);
             // 
+            // IdCategoriaTextBox
+            // 
+            this.IdCategoriaTextBox.Location = new System.Drawing.Point(84, 306);
+            this.IdCategoriaTextBox.MaxLength = 1;
+            this.IdCategoriaTextBox.Name = "IdCategoriaTextBox";
+            this.IdCategoriaTextBox.Size = new System.Drawing.Size(34, 20);
+            this.IdCategoriaTextBox.TabIndex = 62;
+            // 
             // rArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(317, 391);
+            this.Controls.Add(this.IdCategoriaTextBox);
             this.Controls.Add(this.LimpiarButtom);
             this.Controls.Add(this.BorrarButtom);
             this.Controls.Add(this.GuardarButtom);
-            this.Controls.Add(this.CategoriaComboBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.IdSuplidorTextBox);
             this.Controls.Add(this.ExistenciaTextBox);
@@ -257,9 +250,9 @@
         private System.Windows.Forms.TextBox ExistenciaTextBox;
         private System.Windows.Forms.TextBox IdSuplidorTextBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox CategoriaComboBox;
         private System.Windows.Forms.Button LimpiarButtom;
         private System.Windows.Forms.Button BorrarButtom;
         private System.Windows.Forms.Button GuardarButtom;
+        private System.Windows.Forms.TextBox IdCategoriaTextBox;
     }
 }

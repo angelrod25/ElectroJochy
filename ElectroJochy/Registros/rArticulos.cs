@@ -40,7 +40,7 @@ namespace ElectroJochy.Registros
             Articulo.Precio = Utilitarios.ToInt(PrecioTextBox.Text);
             Articulo.IdSuplidor = Utilitarios.ToInt(IdSuplidorTextBox.Text);
             Articulo.Descripcion = DescripcionTextBox.Text;
-            Articulo.Categoria = CategoriaComboBox.SelectedItem.ToString();
+            Articulo.IdCategoria = Utilitarios.ToInt(IdCategoriaTextBox.Text);
 
             if (Articulo.IdArticulo > 0)
             {

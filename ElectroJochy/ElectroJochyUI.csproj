@@ -72,6 +72,12 @@
     <Compile Include="Consultas\cUsuarios.Designer.cs">
       <DependentUpon>cUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultas\cArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\cArticulos.Designer.cs">
+      <DependentUpon>cArticulos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Utilitarios.cs" />
+    <EmbeddedResource Include="Consultas\cArticulos.resx">
+      <DependentUpon>cArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\cUsuarios.resx">
       <DependentUpon>cUsuarios.cs</DependentUpon>
     </EmbeddedResource>

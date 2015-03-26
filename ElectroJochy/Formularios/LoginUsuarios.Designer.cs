@@ -72,6 +72,7 @@
             this.ContrasenaTextBox.Name = "ContrasenaTextBox";
             this.ContrasenaTextBox.Size = new System.Drawing.Size(121, 20);
             this.ContrasenaTextBox.TabIndex = 3;
+            this.ContrasenaTextBox.UseSystemPasswordChar = true;
             // 
             // LimpiarButtom
             // 
