@@ -13,6 +13,7 @@ namespace DAL
     /// </summary>
     public class ConexionDb
     {   
+        //Esta es la de visual studio
         SqlConnection Conexion = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\AngelR\documents\visual studio 2013\Projects\ElectroJochy\ElectroJochy\Database\ElectroJochyDBVS.mdf;Integrated Security=True");
               
         /// <summary>

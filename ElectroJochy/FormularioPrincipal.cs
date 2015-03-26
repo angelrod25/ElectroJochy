@@ -20,12 +20,12 @@ namespace ElectroJochy
             InitializeComponent();
         }
 
-        private void FormularioPrincipal_Load(object sender, EventArgs e)
+        private void FormularioPrincipal_Load(object sender, EventArgs e) // Como borrar esto?
         {
 
         }
 
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)  // Como borrar esto?
         {
 
         }
@@ -57,6 +57,12 @@ namespace ElectroJochy
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Creado por Angel J. Rodríguez para Programación Aplicada I.\n Universidad Católica Nordestana.\n \n Email: Angelrguez25@Gmailcom. \n \n Creditos para el Profesor Enel Almonte por su acesoría.", "Información del Sistema");
+        }
+
+        private void articulosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registros.rArticulos rArticulos = new Registros.rArticulos();
+            rArticulos.Show();
         }
     }
 }

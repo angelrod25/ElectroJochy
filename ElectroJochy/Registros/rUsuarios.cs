@@ -35,7 +35,7 @@ namespace ElectroJochy.Registros
         {
             Usuario.IdUsuario = Utilitarios.ToInt(IdUsuarioTextBox.Text);
             Usuario.Nombre = NombreCompletoTextBox.Text;
-            Usuario.Usuario = IdUsuarioTextBox.Text;
+            Usuario.Usuario = UsuarioTextBox.Text;
             Usuario.Contrasena = ContrasenaTextBox.Text;
             Usuario.Email = EmailTextBox.Text;
             Usuario.Nivel = Utilitarios.ToInt(NivelAccesoTextBox.Text);
