@@ -82,5 +82,17 @@ namespace ElectroJochy
             Consultas.cCategorias cCategorias = new Consultas.cCategorias();
             cCategorias.Show();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registros.rClientes rClientes = new Registros.rClientes();
+            rClientes.Show();
+        }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.cClientes cClientes = new Consultas.cClientes();
+            cClientes.Show();
+        }
     }
 }

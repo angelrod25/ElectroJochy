@@ -62,6 +62,7 @@
             this.FiltroTextBox.Name = "FiltroTextBox";
             this.FiltroTextBox.Size = new System.Drawing.Size(479, 20);
             this.FiltroTextBox.TabIndex = 58;
+            this.FiltroTextBox.TextChanged += new System.EventHandler(this.FiltroTextBox_TextChanged);
             // 
             // label2
             // 
@@ -71,6 +72,7 @@
             this.label2.Size = new System.Drawing.Size(13, 13);
             this.label2.TabIndex = 57;
             this.label2.Text = "=";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // BuscarPorComboBox
             // 
@@ -87,6 +89,7 @@
             this.BuscarPorComboBox.Name = "BuscarPorComboBox";
             this.BuscarPorComboBox.Size = new System.Drawing.Size(129, 21);
             this.BuscarPorComboBox.TabIndex = 56;
+            this.BuscarPorComboBox.SelectedIndexChanged += new System.EventHandler(this.BuscarPorComboBox_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -96,12 +99,14 @@
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 55;
             this.label1.Text = "Buscar Por:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ArticulosDataGrid
             // 
             this.ArticulosDataGrid.AllowUserToAddRows = false;
             this.ArticulosDataGrid.AllowUserToDeleteRows = false;
-            this.ArticulosDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ArticulosDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ArticulosDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ArticulosDataGrid.Location = new System.Drawing.Point(15, 39);

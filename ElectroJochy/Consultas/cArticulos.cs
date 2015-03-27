@@ -78,5 +78,25 @@ namespace ElectroJochy.Consultas
             ArticulosDataGrid.DataSource = dt;
             CantidadTextBox.Text = ArticulosDataGrid.RowCount.ToString();
         }
+
+        private void BuscarPorComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FiltroTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

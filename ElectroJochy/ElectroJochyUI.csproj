@@ -72,6 +72,12 @@
     <Compile Include="Consultas\cCategorias.Designer.cs">
       <DependentUpon>cCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultas\cClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\cClientes.Designer.cs">
+      <DependentUpon>cClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\cUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     <Compile Include="Registros\rCategorias.Designer.cs">
       <DependentUpon>rCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registros\rClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\rClientes.Designer.cs">
+      <DependentUpon>rClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registros\rUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +147,9 @@
     <EmbeddedResource Include="Consultas\cCategorias.resx">
       <DependentUpon>cCategorias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\cClientes.resx">
+      <DependentUpon>cClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\cUsuarios.resx">
       <DependentUpon>cUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\rCategorias.resx">
       <DependentUpon>rCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\rClientes.resx">
+      <DependentUpon>rClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\rUsuarios.resx">
       <DependentUpon>rUsuarios.cs</DependentUpon>
