@@ -25,6 +25,7 @@ namespace BLL
 
         public Usuarios()
         {
+            
             this.IdUsuario = 0;
             this.Nombre = string.Empty;
             this.Usuario = string.Empty;
