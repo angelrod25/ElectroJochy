@@ -70,5 +70,17 @@ namespace ElectroJochy
             Consultas.cArticulos cArticulos = new Consultas.cArticulos();
             cArticulos.Show();
         }
+
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registros.rCategorias rCategorias = new Registros.rCategorias();
+            rCategorias.Show();
+        }
+
+        private void categoriasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.cCategorias cCategorias = new Consultas.cCategorias();
+            cCategorias.Show();
+        }
     }
 }

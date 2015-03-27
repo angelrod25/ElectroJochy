@@ -51,74 +51,80 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(15, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "IdArticulo:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(16, 268);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Descripción";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(15, 82);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Costo:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(16, 174);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Precio:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(15, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Existencia:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(16, 222);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 13);
+            this.label6.Size = new System.Drawing.Size(68, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "IdSuplidor:";
             // 
             // IdArticuloTextBox
             // 
-            this.IdArticuloTextBox.Location = new System.Drawing.Point(73, 29);
+            this.IdArticuloTextBox.Location = new System.Drawing.Point(84, 29);
             this.IdArticuloTextBox.Name = "IdArticuloTextBox";
             this.IdArticuloTextBox.Size = new System.Drawing.Size(100, 20);
             this.IdArticuloTextBox.TabIndex = 6;
             // 
             // DescripcionTextBox
             // 
-            this.DescripcionTextBox.Location = new System.Drawing.Point(84, 265);
+            this.DescripcionTextBox.Location = new System.Drawing.Point(87, 265);
             this.DescripcionTextBox.Name = "DescripcionTextBox";
             this.DescripcionTextBox.Size = new System.Drawing.Size(218, 20);
             this.DescripcionTextBox.TabIndex = 7;
             // 
             // CostoTextBox
             // 
-            this.CostoTextBox.Location = new System.Drawing.Point(73, 82);
+            this.CostoTextBox.Location = new System.Drawing.Point(84, 82);
             this.CostoTextBox.Name = "CostoTextBox";
             this.CostoTextBox.Size = new System.Drawing.Size(100, 20);
             this.CostoTextBox.TabIndex = 8;
@@ -132,14 +138,14 @@
             // 
             // ExistenciaTextBox
             // 
-            this.ExistenciaTextBox.Location = new System.Drawing.Point(73, 127);
+            this.ExistenciaTextBox.Location = new System.Drawing.Point(84, 127);
             this.ExistenciaTextBox.Name = "ExistenciaTextBox";
             this.ExistenciaTextBox.Size = new System.Drawing.Size(100, 20);
             this.ExistenciaTextBox.TabIndex = 10;
             // 
             // IdSuplidorTextBox
             // 
-            this.IdSuplidorTextBox.Location = new System.Drawing.Point(84, 222);
+            this.IdSuplidorTextBox.Location = new System.Drawing.Point(87, 222);
             this.IdSuplidorTextBox.Name = "IdSuplidorTextBox";
             this.IdSuplidorTextBox.Size = new System.Drawing.Size(50, 20);
             this.IdSuplidorTextBox.TabIndex = 11;
@@ -147,9 +153,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(16, 306);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 13);
+            this.label7.Size = new System.Drawing.Size(72, 13);
             this.label7.TabIndex = 12;
             this.label7.Text = "IdCategoria";
             // 
@@ -199,7 +206,7 @@
             // 
             // IdCategoriaTextBox
             // 
-            this.IdCategoriaTextBox.Location = new System.Drawing.Point(84, 306);
+            this.IdCategoriaTextBox.Location = new System.Drawing.Point(87, 306);
             this.IdCategoriaTextBox.MaxLength = 1;
             this.IdCategoriaTextBox.Name = "IdCategoriaTextBox";
             this.IdCategoriaTextBox.Size = new System.Drawing.Size(34, 20);
