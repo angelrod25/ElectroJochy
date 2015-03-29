@@ -14,8 +14,11 @@ namespace DAL
     public class ConexionDb
     {   
         //Esta es la de visual studio
-        SqlConnection Conexion = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\AngelR\documents\visual studio 2013\Projects\ElectroJochy\ElectroJochy\Database\ElectroJochyDBVS.mdf;Integrated Security=True");
-              
+       // SqlConnection Conexion = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\AngelR\documents\visual studio 2013\Projects\ElectroJochy\ElectroJochy\Database\ElectroJochyDBVS.mdf;Integrated Security=True");
+       
+        
+        SqlConnection Conexion = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=ElectroJochyDB1;Integrated Security=True");    
+
         /// <summary>
         /// Ejecutar comandos a la base de datos, recuerde pasar solo los comandos que no retornan algun valor
         /// </summary>

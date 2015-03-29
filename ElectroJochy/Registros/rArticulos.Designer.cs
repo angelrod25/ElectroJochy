@@ -46,6 +46,9 @@
             this.BorrarButtom = new System.Windows.Forms.Button();
             this.GuardarButtom = new System.Windows.Forms.Button();
             this.IdCategoriaTextBox = new System.Windows.Forms.TextBox();
+            this.BuscarButtom = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -212,12 +215,43 @@
             this.IdCategoriaTextBox.Size = new System.Drawing.Size(34, 20);
             this.IdCategoriaTextBox.TabIndex = 62;
             // 
+            // BuscarButtom
+            // 
+            this.BuscarButtom.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButtom.Image")));
+            this.BuscarButtom.Location = new System.Drawing.Point(190, 24);
+            this.BuscarButtom.Name = "BuscarButtom";
+            this.BuscarButtom.Size = new System.Drawing.Size(34, 29);
+            this.BuscarButtom.TabIndex = 63;
+            this.BuscarButtom.UseVisualStyleBackColor = true;
+            this.BuscarButtom.Click += new System.EventHandler(this.BuscarButtom_Click);
+            // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(150, 214);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(34, 29);
+            this.button1.TabIndex = 64;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(127, 301);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(34, 29);
+            this.button2.TabIndex = 65;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // rArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(317, 391);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BuscarButtom);
             this.Controls.Add(this.IdCategoriaTextBox);
             this.Controls.Add(this.LimpiarButtom);
             this.Controls.Add(this.BorrarButtom);
@@ -261,5 +295,8 @@
         private System.Windows.Forms.Button BorrarButtom;
         private System.Windows.Forms.Button GuardarButtom;
         private System.Windows.Forms.TextBox IdCategoriaTextBox;
+        private System.Windows.Forms.Button BuscarButtom;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -33,8 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.UsuarioTextBox = new System.Windows.Forms.TextBox();
             this.ContrasenaTextBox = new System.Windows.Forms.TextBox();
-            this.LimpiarButtom = new System.Windows.Forms.Button();
             this.GuardarButtom = new System.Windows.Forms.Button();
+            this.BorrarButtom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -74,20 +74,6 @@
             this.ContrasenaTextBox.TabIndex = 3;
             this.ContrasenaTextBox.UseSystemPasswordChar = true;
             // 
-            // LimpiarButtom
-            // 
-            this.LimpiarButtom.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.LimpiarButtom.Image = ((System.Drawing.Image)(resources.GetObject("LimpiarButtom.Image")));
-            this.LimpiarButtom.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LimpiarButtom.Location = new System.Drawing.Point(147, 122);
-            this.LimpiarButtom.Name = "LimpiarButtom";
-            this.LimpiarButtom.Size = new System.Drawing.Size(75, 33);
-            this.LimpiarButtom.TabIndex = 66;
-            this.LimpiarButtom.Text = "Limpiar";
-            this.LimpiarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LimpiarButtom.UseVisualStyleBackColor = true;
-            this.LimpiarButtom.Click += new System.EventHandler(this.LimpiarButtom_Click);
-            // 
             // GuardarButtom
             // 
             this.GuardarButtom.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -103,13 +89,28 @@
             this.GuardarButtom.UseVisualStyleBackColor = true;
             this.GuardarButtom.Click += new System.EventHandler(this.GuardarButtom_Click);
             // 
+            // BorrarButtom
+            // 
+            this.BorrarButtom.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BorrarButtom.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BorrarButtom.Image = ((System.Drawing.Image)(resources.GetObject("BorrarButtom.Image")));
+            this.BorrarButtom.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BorrarButtom.Location = new System.Drawing.Point(141, 122);
+            this.BorrarButtom.Name = "BorrarButtom";
+            this.BorrarButtom.Size = new System.Drawing.Size(79, 33);
+            this.BorrarButtom.TabIndex = 67;
+            this.BorrarButtom.Text = "Cancelar";
+            this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BorrarButtom.UseVisualStyleBackColor = true;
+            this.BorrarButtom.Click += new System.EventHandler(this.BorrarButtom_Click);
+            // 
             // LoginUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(292, 184);
-            this.Controls.Add(this.LimpiarButtom);
+            this.Controls.Add(this.BorrarButtom);
             this.Controls.Add(this.GuardarButtom);
             this.Controls.Add(this.ContrasenaTextBox);
             this.Controls.Add(this.UsuarioTextBox);
@@ -128,7 +129,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox UsuarioTextBox;
         private System.Windows.Forms.TextBox ContrasenaTextBox;
-        private System.Windows.Forms.Button LimpiarButtom;
         private System.Windows.Forms.Button GuardarButtom;
+        private System.Windows.Forms.Button BorrarButtom;
     }
 }

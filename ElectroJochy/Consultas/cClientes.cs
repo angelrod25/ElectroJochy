@@ -24,15 +24,6 @@ namespace ElectroJochy.Consultas
             DataTable dt = new DataTable();
             string filtro = "1=1";
 
-            /*
-IdCliente
-Nombre
-Cedula
-Telefono
-Direccion
-Balance
-             */
-
             if (BuscarPorComboBox.SelectedIndex == 0)// IdCliente
             {
                 //todo: validar que sea un numero

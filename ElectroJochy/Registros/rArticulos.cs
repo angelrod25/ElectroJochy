@@ -66,6 +66,11 @@ namespace ElectroJochy.Registros
             
         }
 
+        private void BuscarButtom_Click(object sender, EventArgs e)
+        {
+           
+        }
+
 
 
     }

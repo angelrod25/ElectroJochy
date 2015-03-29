@@ -57,5 +57,10 @@ namespace ElectroJochy.Formularios
             UsuarioTextBox.Clear();
             ContrasenaTextBox.Clear();
         }
+
+        private void BorrarButtom_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
