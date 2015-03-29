@@ -112,5 +112,11 @@ namespace ElectroJochy
             Reportes.ReporteArticulos rArticulos = new Reportes.ReporteArticulos();
             rArticulos.Show();
         }
+
+        private void categoriasToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Reportes.ReporteCategorias rC = new Reportes.ReporteCategorias();
+            rC.Show();
+        }
     }
 }

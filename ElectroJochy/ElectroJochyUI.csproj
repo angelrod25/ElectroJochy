@@ -146,11 +146,23 @@
       <DependentUpon>ArticulosCrystalReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reportes\CategoriasCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CategoriasCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reportes\ReporteArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\ReporteArticulos.Designer.cs">
       <DependentUpon>ReporteArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteCategorias.Designer.cs">
+      <DependentUpon>ReporteCategorias.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReporteUsuarios.cs">
       <SubType>Form</SubType>
@@ -214,8 +226,15 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ArticulosCrystalReport.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CategoriasCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CategoriasCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteArticulos.resx">
       <DependentUpon>ReporteArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteCategorias.resx">
+      <DependentUpon>ReporteCategorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteUsuarios.resx">
       <DependentUpon>ReporteUsuarios.cs</DependentUpon>
