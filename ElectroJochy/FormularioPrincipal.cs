@@ -56,7 +56,7 @@ namespace ElectroJochy
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Creado por Angel J. Rodríguez para Programación Aplicada I.\nUniversidad Católica Nordestana.\n \n Email: Angelrguez25@Gmailcom. \n \nCreditos para el Profesor Enel Almonte por su acesoría.", "Información del Sistema");
+            MessageBox.Show("Creado por Angel J. Rodríguez para Programación Aplicada I.\nUniversidad Católica Nordestana.\n \nEmail: Angelrguez25@Gmail.com. \n \nCreditos para el Profesor Enel Almonte por su acesoría.", "Información del Sistema");
         }
 
         private void articulosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -105,6 +105,12 @@ namespace ElectroJochy
         {
             Consultas.cSuplidores cSuplidores = new Consultas.cSuplidores();
             cSuplidores.Show();
+        }
+
+        private void articulosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Reportes.ReporteArticulos rArticulos = new Reportes.ReporteArticulos();
+            rArticulos.Show();
         }
     }
 }
