@@ -33,6 +33,7 @@ namespace ElectroJochy.Registros
 
         private void GuardarButtom_Click(object sender, EventArgs e)
         {
+            Boolean paso = false;
 
             ErrorProvider EP1 = new ErrorProvider();
             if (!Utilitarios.ValidarTextBoxVacio(NombreCompletoTextBox, EP1, "Favor no dejar este campo Vacio"))
@@ -62,7 +63,13 @@ namespace ElectroJochy.Registros
             Usuario.Email = EmailTextBox.Text;
             Usuario.Nivel = Utilitarios.ToInt(NivelAccesoTextBox.Text);
 
-            Usuario.Insertar();
+             paso = Usuario.Insertar();
+           
+            if (paso)
+                MessageBox.Show("Usuario Guardado");
+            else
+                MessageBox.Show("Por Favor Complete los Campos Correctamente");
+        
         }
 
         private void BorrarButtom_Click(object sender, EventArgs e)

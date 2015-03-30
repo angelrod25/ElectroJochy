@@ -77,6 +77,11 @@ namespace ElectroJochy.Registros
                 paso = Articulo.Insertar();
 
             }
+
+            if (paso)
+                MessageBox.Show("Articulo Guardado");
+            else
+                MessageBox.Show("Por Favor Complete los Campos Correctamente");
         }
 
         private void LimpiarButtom_Click(object sender, EventArgs e)
