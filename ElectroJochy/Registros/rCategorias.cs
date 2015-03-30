@@ -30,6 +30,10 @@ namespace ElectroJochy.Registros
         {
             Boolean paso = false;
 
+            ErrorProvider EP1 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(NombreTextBox, EP1, "Favor no dejar este campo Vacio"))
+                return;
+
             Categoria.Nombre = NombreTextBox.Text;
             Categoria.IdCategoria = Utilitarios.ToInt(IdCategoriaTextBox.Text);
             

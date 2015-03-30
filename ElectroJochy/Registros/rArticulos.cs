@@ -34,6 +34,30 @@ namespace ElectroJochy.Registros
         {
             Boolean paso = false;
 
+            ErrorProvider EP1 = new ErrorProvider();
+            if(!Utilitarios.ValidarTextBoxVacio(CostoTextBox, EP1, "Favor no dejar este campo Vacio"))
+                return;
+
+            ErrorProvider EP2 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(ExistenciaTextBox, EP2, "Favor no dejar este campo Vacio"))
+                return;
+
+            ErrorProvider EP3 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(PrecioTextBox, EP3, "Favor no dejar este campo Vacio"))
+                return;
+
+            ErrorProvider EP4 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(IdSuplidorTextBox, EP4, "Favor no dejar este campo Vacio"))
+                return;
+
+            ErrorProvider EP5 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(DescripcionTextBox, EP5, "Favor no dejar este campo Vacio"))
+                return;
+
+            ErrorProvider EP6 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(IdCategoriaTextBox, EP6, "Favor no dejar este campo Vacio"))
+                return;
+
             Articulo.IdArticulo = Utilitarios.ToInt(IdArticuloTextBox.Text);
             Articulo.Costo = Utilitarios.ToInt(CostoTextBox.Text);
             Articulo.Existencia = Utilitarios.ToInt(ExistenciaTextBox.Text);

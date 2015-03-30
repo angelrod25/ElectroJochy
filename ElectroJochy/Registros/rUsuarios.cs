@@ -33,6 +33,28 @@ namespace ElectroJochy.Registros
 
         private void GuardarButtom_Click(object sender, EventArgs e)
         {
+
+            ErrorProvider EP1 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(NombreCompletoTextBox, EP1, "Favor no dejar este campo Vacio"))
+                return;
+
+            ErrorProvider EP2 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(UsuarioTextBox, EP2, "Favor no dejar este campo Vacio"))
+                return;
+
+            ErrorProvider EP3 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(ContrasenaTextBox, EP3, "Favor no dejar este campo Vacio"))
+                return;
+
+            ErrorProvider EP4 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(EmailTextBox, EP4, "Favor no dejar este campo Vacio"))
+                return;
+
+            ErrorProvider EP5 = new ErrorProvider();
+            if (!Utilitarios.ValidarTextBoxVacio(NivelAccesoTextBox, EP5, "Favor no dejar este campo Vacio"))
+                return;
+
+
             Usuario.IdUsuario = Utilitarios.ToInt(IdUsuarioTextBox.Text);
             Usuario.Nombre = NombreCompletoTextBox.Text;
             Usuario.Usuario = UsuarioTextBox.Text;
