@@ -149,6 +149,11 @@ namespace ElectroJochy.Registros
             }
         }
 
+        private void CostoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
     }

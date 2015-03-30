@@ -1,6 +1,6 @@
 ﻿namespace ElectroJochy.Reportes
 {
-    partial class ReporteClientes
+    partial class ReportePagos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ClientesCrystalReport1 = new ElectroJochy.Reportes.ClientesCrystalReport();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ClientesCrystalReport2 = new ElectroJochy.Reportes.ClientesCrystalReport();
-            this.ClientesCrystalReport3 = new ElectroJochy.Reportes.ClientesCrystalReport();
+            this.PagosCrystalReport1 = new ElectroJochy.Reportes.PagosCrystalReport();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -42,27 +40,25 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.ClientesCrystalReport3;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1107, 610);
+            this.crystalReportViewer1.ReportSource = this.PagosCrystalReport1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1148, 610);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // ReporteClientes
+            // ReportePagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1107, 610);
+            this.ClientSize = new System.Drawing.Size(1148, 610);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "ReporteClientes";
-            this.Text = "Reporte de Clientes";
+            this.Name = "ReportePagos";
+            this.Text = "Reporte de Pagos";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private ClientesCrystalReport ClientesCrystalReport1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private ClientesCrystalReport ClientesCrystalReport2;
-        private ClientesCrystalReport ClientesCrystalReport3;
+        private PagosCrystalReport PagosCrystalReport1;
     }
 }

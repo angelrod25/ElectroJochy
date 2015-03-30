@@ -117,13 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ClientesCrystalReport1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="ClientesCrystalReport3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>367, 17</value>
-  </metadata>
-  <metadata name="ClientesCrystalReport2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>192, 17</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BuscarButtom.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAUFJREFUOE/t
+        kr1KA0EUhVdsRFRECyFdSn2AhDxBHiCkyCNtsewvga22SrNtGhubVKmSB7BJL6SUFML6HbkRdXfzp1jl
+        g2Fmz5175s7dcY58I0mSC9/323Ecd5ivTd6fMAyvoigaMlaMQiMIgjf0EfOdbdsNM5szP1NZz3XdyzRN
+        z1l30WcYLlg3bPt2SBqa2a1Jn8iY+JT42KTNqGckrFSZSSWItxhqQ9OkevQDtFnXNKlEURQnXHvJoX2T
+        6mFTR4a6mkmVsOeFMbDPevQ09Dcx7ppUgv496FD23pu0GRJGJMyqqszz/JT4I4dOTNqO3pmeBqZTRks9
+        k67KZKbqiD9lWXb2kbALXLlB8tiSl8zqmdYTmWkt871MBYlN/U3mwbpnMllXepBpFT9N1VsLHc4X01fP
+        825M/h2q7M/M/gnHeQdI4tozpPVZaAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

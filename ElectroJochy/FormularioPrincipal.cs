@@ -130,5 +130,17 @@ namespace ElectroJochy
             Reportes.ReporteSuplidores rSup = new Reportes.ReporteSuplidores();
             rSup.Show();
         }
+
+        private void pagosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registros.rPagos rPago = new Registros.rPagos();
+            rPago.Show();
+        }
+
+        private void pagosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.cPagos cPago = new Consultas.cPagos();
+            cPago.Show();
+        }
     }
 }
