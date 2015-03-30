@@ -58,7 +58,7 @@
             // ContrasenaTextBox
             // 
             this.ContrasenaTextBox.Location = new System.Drawing.Point(167, 134);
-            this.ContrasenaTextBox.MaxLength = 50;
+            this.ContrasenaTextBox.MaxLength = 25;
             this.ContrasenaTextBox.Name = "ContrasenaTextBox";
             this.ContrasenaTextBox.Size = new System.Drawing.Size(133, 20);
             this.ContrasenaTextBox.TabIndex = 80;
@@ -74,18 +74,20 @@
             // NombreCompletoTextBox
             // 
             this.NombreCompletoTextBox.Location = new System.Drawing.Point(167, 50);
-            this.NombreCompletoTextBox.MaxLength = 50;
+            this.NombreCompletoTextBox.MaxLength = 60;
             this.NombreCompletoTextBox.Name = "NombreCompletoTextBox";
             this.NombreCompletoTextBox.Size = new System.Drawing.Size(143, 20);
             this.NombreCompletoTextBox.TabIndex = 78;
+            this.NombreCompletoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NombreCompletoTextBox_KeyPress);
             // 
             // IdUsuarioTextBox
             // 
             this.IdUsuarioTextBox.Location = new System.Drawing.Point(167, 10);
-            this.IdUsuarioTextBox.MaxLength = 4;
+            this.IdUsuarioTextBox.MaxLength = 2;
             this.IdUsuarioTextBox.Name = "IdUsuarioTextBox";
             this.IdUsuarioTextBox.Size = new System.Drawing.Size(44, 20);
             this.IdUsuarioTextBox.TabIndex = 77;
+            this.IdUsuarioTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdUsuarioTextBox_KeyPress);
             // 
             // label6
             // 
@@ -198,6 +200,7 @@
             this.NivelAccesoTextBox.Name = "NivelAccesoTextBox";
             this.NivelAccesoTextBox.Size = new System.Drawing.Size(52, 20);
             this.NivelAccesoTextBox.TabIndex = 83;
+            this.NivelAccesoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NivelAccesoTextBox_KeyPress);
             // 
             // button1
             // 

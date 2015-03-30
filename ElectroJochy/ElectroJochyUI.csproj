@@ -152,6 +152,12 @@
       <DependentUpon>CategoriasCrystalReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reportes\ClientesCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientesCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reportes\ReporteArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,11 +170,29 @@
     <Compile Include="Reportes\ReporteCategorias.Designer.cs">
       <DependentUpon>ReporteCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReporteClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteClientes.Designer.cs">
+      <DependentUpon>ReporteClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteSuplidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteSuplidores.Designer.cs">
+      <DependentUpon>ReporteSuplidores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReporteUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\ReporteUsuarios.Designer.cs">
       <DependentUpon>ReporteUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SuplidoresCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuplidoresCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reportes\UsuariosCrystalReport1.cs">
       <AutoGen>True</AutoGen>
@@ -230,14 +254,28 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CategoriasCrystalReport.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ClientesCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClientesCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteArticulos.resx">
       <DependentUpon>ReporteArticulos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteCategorias.resx">
       <DependentUpon>ReporteCategorias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteClientes.resx">
+      <DependentUpon>ReporteClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteSuplidores.resx">
+      <DependentUpon>ReporteSuplidores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteUsuarios.resx">
       <DependentUpon>ReporteUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\SuplidoresCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SuplidoresCrystalReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\UsuariosCrystalReport1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

@@ -64,18 +64,20 @@
             // IdSuplidorTextBox
             // 
             this.IdSuplidorTextBox.Location = new System.Drawing.Point(113, 15);
-            this.IdSuplidorTextBox.MaxLength = 1;
+            this.IdSuplidorTextBox.MaxLength = 3;
             this.IdSuplidorTextBox.Name = "IdSuplidorTextBox";
             this.IdSuplidorTextBox.Size = new System.Drawing.Size(30, 20);
             this.IdSuplidorTextBox.TabIndex = 85;
+            this.IdSuplidorTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdSuplidorTextBox_KeyPress);
             // 
             // NombreTextBox
             // 
             this.NombreTextBox.Location = new System.Drawing.Point(113, 45);
-            this.NombreTextBox.MaxLength = 20;
+            this.NombreTextBox.MaxLength = 75;
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(156, 20);
             this.NombreTextBox.TabIndex = 84;
+            this.NombreTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NombreTextBox_KeyPress);
             // 
             // label1
             // 
@@ -151,6 +153,7 @@
             // TelefonoTextBox
             // 
             this.TelefonoTextBox.Location = new System.Drawing.Point(113, 74);
+            this.TelefonoTextBox.MaxLength = 12;
             this.TelefonoTextBox.Name = "TelefonoTextBox";
             this.TelefonoTextBox.Size = new System.Drawing.Size(100, 20);
             this.TelefonoTextBox.TabIndex = 90;
@@ -158,6 +161,7 @@
             // RNCTextBox
             // 
             this.RNCTextBox.Location = new System.Drawing.Point(113, 107);
+            this.RNCTextBox.MaxLength = 13;
             this.RNCTextBox.Name = "RNCTextBox";
             this.RNCTextBox.Size = new System.Drawing.Size(100, 20);
             this.RNCTextBox.TabIndex = 91;

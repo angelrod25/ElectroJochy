@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace ElectroJochy
 {
-    public static class Utilitarios
+    public class Utilitarios
     {
 
         public static int ToInt(string texto)
@@ -33,10 +33,61 @@ namespace ElectroJochy
             return valido;
         }
 
+        public static void soloLetras(KeyPressEventArgs e)
+        {
+            try
+            {
+                if (Char.IsLetter(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else if (Char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else if (Char.IsSeparator(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        public static void soloNumeros(KeyPressEventArgs e)
+        {
+            try
+            {
+                if (Char.IsNumber(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else if (Char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+
+                else
+                {
+                    e.Handled = true;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
     }//end clase
 
 
-    ///probar
+  
 
 
 

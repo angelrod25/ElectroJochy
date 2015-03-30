@@ -71,6 +71,55 @@ namespace ElectroJochy.Registros
            
         }
 
+        private void DescripcionTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           // Utilitarios.soloLetras(e);
+        }
+
+        private void IdArticuloTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Utilitarios.soloNumeros(e);
+        }
+
+        private void ExistenciaTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Utilitarios.soloNumeros(e);
+        }
+
+        private void IdSuplidorTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Utilitarios.soloNumeros(e);
+        }
+
+        private void IdCategoriaTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Utilitarios.soloNumeros(e);
+        }
+        
+        private void CostoTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || e.KeyChar.ToString().Equals(".") || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void PrecioTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || e.KeyChar.ToString().Equals(".") || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
 
 
     }

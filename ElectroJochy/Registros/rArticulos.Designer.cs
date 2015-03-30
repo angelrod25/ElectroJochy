@@ -115,15 +115,18 @@
             // 
             this.IdArticuloTextBox.Location = new System.Drawing.Point(84, 29);
             this.IdArticuloTextBox.Name = "IdArticuloTextBox";
-            this.IdArticuloTextBox.Size = new System.Drawing.Size(100, 20);
+            this.IdArticuloTextBox.Size = new System.Drawing.Size(53, 20);
             this.IdArticuloTextBox.TabIndex = 6;
+            this.IdArticuloTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdArticuloTextBox_KeyPress);
             // 
             // DescripcionTextBox
             // 
             this.DescripcionTextBox.Location = new System.Drawing.Point(87, 265);
+            this.DescripcionTextBox.MaxLength = 125;
             this.DescripcionTextBox.Name = "DescripcionTextBox";
             this.DescripcionTextBox.Size = new System.Drawing.Size(218, 20);
             this.DescripcionTextBox.TabIndex = 7;
+            this.DescripcionTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DescripcionTextBox_KeyPress);
             // 
             // CostoTextBox
             // 
@@ -131,6 +134,7 @@
             this.CostoTextBox.Name = "CostoTextBox";
             this.CostoTextBox.Size = new System.Drawing.Size(100, 20);
             this.CostoTextBox.TabIndex = 8;
+            this.CostoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CostoTextBox_KeyPress);
             // 
             // PrecioTextBox
             // 
@@ -138,6 +142,7 @@
             this.PrecioTextBox.Name = "PrecioTextBox";
             this.PrecioTextBox.Size = new System.Drawing.Size(100, 20);
             this.PrecioTextBox.TabIndex = 9;
+            this.PrecioTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PrecioTextBox_KeyPress);
             // 
             // ExistenciaTextBox
             // 
@@ -145,13 +150,16 @@
             this.ExistenciaTextBox.Name = "ExistenciaTextBox";
             this.ExistenciaTextBox.Size = new System.Drawing.Size(100, 20);
             this.ExistenciaTextBox.TabIndex = 10;
+            this.ExistenciaTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ExistenciaTextBox_KeyPress);
             // 
             // IdSuplidorTextBox
             // 
             this.IdSuplidorTextBox.Location = new System.Drawing.Point(87, 222);
+            this.IdSuplidorTextBox.MaxLength = 3;
             this.IdSuplidorTextBox.Name = "IdSuplidorTextBox";
             this.IdSuplidorTextBox.Size = new System.Drawing.Size(50, 20);
             this.IdSuplidorTextBox.TabIndex = 11;
+            this.IdSuplidorTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdSuplidorTextBox_KeyPress);
             // 
             // label7
             // 
@@ -210,15 +218,16 @@
             // IdCategoriaTextBox
             // 
             this.IdCategoriaTextBox.Location = new System.Drawing.Point(87, 306);
-            this.IdCategoriaTextBox.MaxLength = 1;
+            this.IdCategoriaTextBox.MaxLength = 2;
             this.IdCategoriaTextBox.Name = "IdCategoriaTextBox";
             this.IdCategoriaTextBox.Size = new System.Drawing.Size(34, 20);
             this.IdCategoriaTextBox.TabIndex = 62;
+            this.IdCategoriaTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdCategoriaTextBox_KeyPress);
             // 
             // BuscarButtom
             // 
             this.BuscarButtom.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButtom.Image")));
-            this.BuscarButtom.Location = new System.Drawing.Point(190, 24);
+            this.BuscarButtom.Location = new System.Drawing.Point(150, 24);
             this.BuscarButtom.Name = "BuscarButtom";
             this.BuscarButtom.Size = new System.Drawing.Size(34, 29);
             this.BuscarButtom.TabIndex = 63;

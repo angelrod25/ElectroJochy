@@ -118,5 +118,17 @@ namespace ElectroJochy
             Reportes.ReporteCategorias rC = new Reportes.ReporteCategorias();
             rC.Show();
         }
+
+        private void clientesToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Reportes.ReporteClientes rClientes = new Reportes.ReporteClientes();
+            rClientes.Show();
+        }
+
+        private void suplidoresToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Reportes.ReporteSuplidores rSup = new Reportes.ReporteSuplidores();
+            rSup.Show();
+        }
     }
 }

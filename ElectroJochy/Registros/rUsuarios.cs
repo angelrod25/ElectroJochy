@@ -53,5 +53,20 @@ namespace ElectroJochy.Registros
                 MessageBox.Show("Usuario Eliminado Con Exito");
             }
         }
+
+        private void IdUsuarioTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Utilitarios.soloNumeros(e);
+        }
+
+        private void NombreCompletoTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Utilitarios.soloLetras(e);
+        }
+
+        private void NivelAccesoTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Utilitarios.soloNumeros(e);
+        }
     }
 }

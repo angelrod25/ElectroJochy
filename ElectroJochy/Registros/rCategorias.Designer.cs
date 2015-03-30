@@ -99,14 +99,16 @@
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(181, 20);
             this.NombreTextBox.TabIndex = 76;
+            this.NombreTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NombreTextBox_KeyPress);
             // 
             // IdCategoriaTextBox
             // 
             this.IdCategoriaTextBox.Location = new System.Drawing.Point(114, 27);
-            this.IdCategoriaTextBox.MaxLength = 1;
+            this.IdCategoriaTextBox.MaxLength = 2;
             this.IdCategoriaTextBox.Name = "IdCategoriaTextBox";
             this.IdCategoriaTextBox.Size = new System.Drawing.Size(30, 20);
             this.IdCategoriaTextBox.TabIndex = 77;
+            this.IdCategoriaTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdCategoriaTextBox_KeyPress);
             // 
             // label2
             // 

@@ -67,6 +67,17 @@ namespace ElectroJochy.Registros
                 MessageBox.Show("Categoria Eliminada Con Exito");
             }
         }
+
+        private void IdCategoriaTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Utilitarios.soloNumeros(e);
+        }
+
+        private void NombreTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Utilitarios.soloLetras(e);
+        }
+
         }
     }
 
