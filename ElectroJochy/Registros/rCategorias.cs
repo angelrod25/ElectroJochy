@@ -42,12 +42,15 @@ namespace ElectroJochy.Registros
             {
                 //editando
                 paso = Categoria.Modificar();
+                IdCategoriaTextBox.Clear();
+                NombreTextBox.Clear();
             }
             else
             {
                 //Insertando
                 paso = Categoria.Insertar();
-
+                IdCategoriaTextBox.Clear();
+                NombreTextBox.Clear();
             }
 
             if(paso)

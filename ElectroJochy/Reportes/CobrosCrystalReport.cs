@@ -16,14 +16,14 @@ namespace ElectroJochy.Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ArticulosCrystalReport : ReportClass {
+    public class CobrosCrystalReport : ReportClass {
         
-        public ArticulosCrystalReport() {
+        public CobrosCrystalReport() {
         }
         
         public override string ResourceName {
             get {
-                return "ArticulosCrystalReport.rpt";
+                return "CobrosCrystalReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace ElectroJochy.Reportes {
         
         public override string FullResourceName {
             get {
-                return "ElectroJochy.Reportes.ArticulosCrystalReport.rpt";
+                return "ElectroJochy.Reportes.CobrosCrystalReport.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace ElectroJochy.Reportes {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedArticulosCrystalReport : Component, ICachedReport {
+    public class CachedCobrosCrystalReport : Component, ICachedReport {
         
-        public CachedArticulosCrystalReport() {
+        public CachedCobrosCrystalReport() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace ElectroJochy.Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ArticulosCrystalReport rpt = new ArticulosCrystalReport();
+            CobrosCrystalReport rpt = new CobrosCrystalReport();
             rpt.Site = this.Site;
             return rpt;
         }

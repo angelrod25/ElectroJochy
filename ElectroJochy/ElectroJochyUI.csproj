@@ -78,6 +78,12 @@
     <Compile Include="Consultas\cClientes.Designer.cs">
       <DependentUpon>cClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultas\cCobros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\cCobros.Designer.cs">
+      <DependentUpon>cCobros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\cPagos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,18 @@
     <Compile Include="Registros\rClientes.Designer.cs">
       <DependentUpon>rClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registros\rCobros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\rCobros.Designer.cs">
+      <DependentUpon>rCobros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\rFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\rFacturas.Designer.cs">
+      <DependentUpon>rFacturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registros\rPagos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +188,12 @@
       <DependentUpon>ClientesCrystalReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reportes\CobrosCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CobrosCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reportes\PagosCrystalReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -193,6 +217,12 @@
     </Compile>
     <Compile Include="Reportes\ReporteClientes.Designer.cs">
       <DependentUpon>ReporteClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteCobros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteCobros.Designer.cs">
+      <DependentUpon>ReporteCobros.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReportePagos.cs">
       <SubType>Form</SubType>
@@ -234,6 +264,9 @@
     <EmbeddedResource Include="Consultas\cClientes.resx">
       <DependentUpon>cClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\cCobros.resx">
+      <DependentUpon>cCobros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\cPagos.resx">
       <DependentUpon>cPagos.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,6 +300,12 @@
     <EmbeddedResource Include="Registros\rClientes.resx">
       <DependentUpon>rClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Registros\rCobros.resx">
+      <DependentUpon>rCobros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\rFacturas.resx">
+      <DependentUpon>rFacturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registros\rPagos.resx">
       <DependentUpon>rPagos.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,6 +327,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ClientesCrystalReport.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CobrosCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CobrosCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\PagosCrystalReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PagosCrystalReport.cs</LastGenOutput>
@@ -300,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteClientes.resx">
       <DependentUpon>ReporteClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteCobros.resx">
+      <DependentUpon>ReporteCobros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportePagos.resx">
       <DependentUpon>ReportePagos.cs</DependentUpon>

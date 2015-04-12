@@ -39,8 +39,8 @@
             this.GuardarButtom = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.TelefonoTextBox = new System.Windows.Forms.TextBox();
             this.RNCTextBox = new System.Windows.Forms.TextBox();
+            this.TelefonoMaskedBox = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -146,17 +146,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.Size = new System.Drawing.Size(77, 13);
             this.label4.TabIndex = 89;
-            this.label4.Text = "RNC:";
-            // 
-            // TelefonoTextBox
-            // 
-            this.TelefonoTextBox.Location = new System.Drawing.Point(113, 74);
-            this.TelefonoTextBox.MaxLength = 12;
-            this.TelefonoTextBox.Name = "TelefonoTextBox";
-            this.TelefonoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.TelefonoTextBox.TabIndex = 90;
+            this.label4.Text = "RNC / Cédula:";
             // 
             // RNCTextBox
             // 
@@ -166,13 +158,21 @@
             this.RNCTextBox.Size = new System.Drawing.Size(100, 20);
             this.RNCTextBox.TabIndex = 91;
             // 
+            // TelefonoMaskedBox
+            // 
+            this.TelefonoMaskedBox.Location = new System.Drawing.Point(113, 72);
+            this.TelefonoMaskedBox.Mask = "999-000-0000";
+            this.TelefonoMaskedBox.Name = "TelefonoMaskedBox";
+            this.TelefonoMaskedBox.Size = new System.Drawing.Size(100, 20);
+            this.TelefonoMaskedBox.TabIndex = 92;
+            // 
             // rSuplidores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(273, 196);
+            this.Controls.Add(this.TelefonoMaskedBox);
             this.Controls.Add(this.RNCTextBox);
-            this.Controls.Add(this.TelefonoTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
@@ -202,7 +202,7 @@
         private System.Windows.Forms.Button GuardarButtom;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TelefonoTextBox;
         private System.Windows.Forms.TextBox RNCTextBox;
+        private System.Windows.Forms.MaskedTextBox TelefonoMaskedBox;
     }
 }

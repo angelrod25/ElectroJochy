@@ -63,12 +63,29 @@ namespace ElectroJochy.Registros
             Usuario.Email = EmailTextBox.Text;
             Usuario.Nivel = Utilitarios.ToInt(NivelAccesoTextBox.Text);
 
-             paso = Usuario.Insertar();
-           
-            if (paso)
-                MessageBox.Show("Usuario Guardado");
+
+            if (Usuario.IdUsuario > 0)
+            {
+                paso = Usuario.Modificar();   //editando
+            }
+
             else
-                MessageBox.Show("Por Favor Complete los Campos Correctamente");
+            {
+                paso = Usuario.Insertar(); // insertando
+            }
+
+             if (paso)
+             {
+                 MessageBox.Show("Usuario Guardado");
+                 IdUsuarioTextBox.Clear();
+                 NombreCompletoTextBox.Clear();
+                 UsuarioTextBox.Clear();
+                 ContrasenaTextBox.Clear();
+                 EmailTextBox.Clear();
+                 NivelAccesoTextBox.Clear();
+             }
+             else
+                 MessageBox.Show("Por Favor Complete los Campos Correctamente");
         
         }
 

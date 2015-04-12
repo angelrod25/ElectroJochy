@@ -127,8 +127,8 @@ namespace ElectroJochy
 
         private void suplidoresToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Reportes.ReporteSuplidores rSup = new Reportes.ReporteSuplidores();
-            rSup.Show();
+            Reportes.ReporteSuplidores repSup = new Reportes.ReporteSuplidores();
+            repSup.Show();
         }
 
         private void pagosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -141,6 +141,36 @@ namespace ElectroJochy
         {
             Consultas.cPagos cPago = new Consultas.cPagos();
             cPago.Show();
+        }
+
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registros.rFacturas rFact = new Registros.rFacturas();
+            rFact.Show();
+        }
+
+        private void pagosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Reportes.ReportePagos repPagos = new Reportes.ReportePagos();
+            repPagos.Show();
+        }
+
+        private void cobrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registros.rCobros regCobros = new Registros.rCobros();
+            regCobros.Show();
+        }
+
+        private void cobrosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.cCobros conCobros = new Consultas.cCobros();
+            conCobros.Show();
+        }
+
+        private void cobrosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Reportes.ReporteCobros repCobros = new Reportes.ReporteCobros();
+            repCobros.Show();
         }
     }
 }

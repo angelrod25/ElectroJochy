@@ -70,11 +70,23 @@ namespace ElectroJochy.Registros
             {
                 //editando
                 paso = Articulo.Modificar();
+                IdArticuloTextBox.Clear();
+                CostoTextBox.Clear();
+                ExistenciaTextBox.Clear();
+                PrecioTextBox.Clear();
+                IdSuplidorTextBox.Clear();
+                DescripcionTextBox.Clear();
             }
             else
             {
                 //Insertando
                 paso = Articulo.Insertar();
+                IdArticuloTextBox.Clear();
+                CostoTextBox.Clear();
+                ExistenciaTextBox.Clear();
+                PrecioTextBox.Clear();
+                IdSuplidorTextBox.Clear();
+                DescripcionTextBox.Clear();
 
             }
 
@@ -127,7 +139,8 @@ namespace ElectroJochy.Registros
         
         private void CostoTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar) || e.KeyChar.ToString().Equals(".") || char.IsControl(e.KeyChar))
+            // e.KeyChar.ToString().Equals(".")
+            if (char.IsNumber(e.KeyChar) || char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
             }
@@ -139,7 +152,9 @@ namespace ElectroJochy.Registros
 
         private void PrecioTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar) || e.KeyChar.ToString().Equals(".") || char.IsControl(e.KeyChar))
+            // e.KeyChar.ToString().Equals(".")
+
+            if (char.IsNumber(e.KeyChar) || char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
             }

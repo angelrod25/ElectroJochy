@@ -74,6 +74,7 @@
             // 
             // BuscarPorComboBox
             // 
+            this.BuscarPorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.BuscarPorComboBox.FormattingEnabled = true;
             this.BuscarPorComboBox.Items.AddRange(new object[] {
             "IdSuplidor",
@@ -99,6 +100,7 @@
             this.CantidadTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.CantidadTextBox.Location = new System.Drawing.Point(151, 322);
             this.CantidadTextBox.Name = "CantidadTextBox";
+            this.CantidadTextBox.ReadOnly = true;
             this.CantidadTextBox.Size = new System.Drawing.Size(68, 20);
             this.CantidadTextBox.TabIndex = 71;
             // 

@@ -60,6 +60,7 @@
             this.UsuarioTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UsuarioTextBox.Location = new System.Drawing.Point(108, 18);
+            this.UsuarioTextBox.MaxLength = 25;
             this.UsuarioTextBox.Name = "UsuarioTextBox";
             this.UsuarioTextBox.Size = new System.Drawing.Size(121, 20);
             this.UsuarioTextBox.TabIndex = 2;
@@ -69,6 +70,7 @@
             this.ContrasenaTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ContrasenaTextBox.Location = new System.Drawing.Point(108, 73);
+            this.ContrasenaTextBox.MaxLength = 25;
             this.ContrasenaTextBox.Name = "ContrasenaTextBox";
             this.ContrasenaTextBox.Size = new System.Drawing.Size(121, 20);
             this.ContrasenaTextBox.TabIndex = 3;
@@ -116,6 +118,7 @@
             this.Controls.Add(this.UsuarioTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginUsuarios";
             this.Text = "Login de Usuario";
             this.ResumeLayout(false);

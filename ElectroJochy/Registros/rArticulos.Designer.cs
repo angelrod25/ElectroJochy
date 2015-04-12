@@ -114,6 +114,7 @@
             // IdArticuloTextBox
             // 
             this.IdArticuloTextBox.Location = new System.Drawing.Point(84, 29);
+            this.IdArticuloTextBox.MaxLength = 9;
             this.IdArticuloTextBox.Name = "IdArticuloTextBox";
             this.IdArticuloTextBox.Size = new System.Drawing.Size(53, 20);
             this.IdArticuloTextBox.TabIndex = 6;
@@ -131,6 +132,7 @@
             // CostoTextBox
             // 
             this.CostoTextBox.Location = new System.Drawing.Point(84, 82);
+            this.CostoTextBox.MaxLength = 8;
             this.CostoTextBox.Name = "CostoTextBox";
             this.CostoTextBox.Size = new System.Drawing.Size(100, 20);
             this.CostoTextBox.TabIndex = 8;
@@ -139,6 +141,7 @@
             // PrecioTextBox
             // 
             this.PrecioTextBox.Location = new System.Drawing.Point(84, 174);
+            this.PrecioTextBox.MaxLength = 9;
             this.PrecioTextBox.Name = "PrecioTextBox";
             this.PrecioTextBox.Size = new System.Drawing.Size(100, 20);
             this.PrecioTextBox.TabIndex = 9;
@@ -147,6 +150,7 @@
             // ExistenciaTextBox
             // 
             this.ExistenciaTextBox.Location = new System.Drawing.Point(84, 127);
+            this.ExistenciaTextBox.MaxLength = 8;
             this.ExistenciaTextBox.Name = "ExistenciaTextBox";
             this.ExistenciaTextBox.Size = new System.Drawing.Size(100, 20);
             this.ExistenciaTextBox.TabIndex = 10;

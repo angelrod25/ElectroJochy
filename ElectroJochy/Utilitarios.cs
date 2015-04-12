@@ -33,6 +33,20 @@ namespace ElectroJochy
             return valido;
         }
 
+        public static bool ValidarMaskedBoxVacio(MaskedTextBox TextoValidar, ErrorProvider ErrProvider, string MensajedeError)
+        {
+            bool valido = true;
+
+            if (TextoValidar.Text.Trim().Length == 0)
+            {
+                ErrProvider.SetError(TextoValidar, MensajedeError);
+                TextoValidar.Focus();
+                valido = false;
+            }
+
+            return valido;
+        }
+
         public static void soloLetras(KeyPressEventArgs e)
         {
             try

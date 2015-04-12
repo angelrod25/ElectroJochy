@@ -35,6 +35,17 @@ namespace BLL
             return this.IdPago > 0;
         }
 
+        public Boolean Modificar()
+        {
+
+            bool paso1 = false;
+
+            paso1 = Conexion.EjecutarDB("Update Pagos set Concepto = '" + this.Concepto + "', Monto = " + this.Monto + " Where IdPago = " + this.IdPago);
+
+            return paso1;
+
+        }
+
         public Boolean Eliminar(Int32 IdBuscado)
         {
             return Conexion.EjecutarDB("Delete from Pagos where IdPago =" + IdBuscado);

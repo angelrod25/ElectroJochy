@@ -32,7 +32,8 @@ namespace ElectroJochy.Registros
 
         private void MontoTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar) || e.KeyChar.ToString().Equals(".") || char.IsControl(e.KeyChar))
+            //e.KeyChar.ToString().Equals(".") ||
+            if (char.IsNumber(e.KeyChar) ||  char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
             }
@@ -76,10 +77,25 @@ namespace ElectroJochy.Registros
             Pago.Concepto = ConceptoTextBox.Text;
             Pago.Monto = Utilitarios.ToInt(MontoTextBox.Text);
 
-            paso = Pago.Insertar();
+            if (Pago.IdPago > 0)
+            {
+                paso = Pago.Modificar();   //editando
+            }
+
+            else
+            {
+                paso = Pago.Insertar(); // insertando
+            }
+
 
             if (paso)
-                MessageBox.Show("Pago Guardado");
+            {
+            MessageBox.Show("Pago Guardado");
+            IdPagoTextBox.Clear();
+            ConceptoTextBox.Clear();
+            MontoTextBox.Clear();
+            }
+                
             else
                 MessageBox.Show("Por Favor Complete los Campos Correctamente");
         }

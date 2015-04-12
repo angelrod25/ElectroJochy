@@ -46,6 +46,17 @@ namespace BLL
 
         }
 
+        public Boolean Modificar()
+        {
+
+            bool paso1 = false;
+
+            paso1 = Conexion.EjecutarDB("Update Usuarios set Nombre = '" + this.Nombre+ "', Usuario = '" + this.Usuario+ "', Contrasena = '" + this.Contrasena+ "', Email = '"+ this.Email+ "', Nivel = "+ this.Nivel+ "  Where IdUsuario = " + this.IdUsuario);
+
+            return paso1;
+
+        }
+
         public Boolean Eliminar(Int32 IdBuscado)
         {
             return Conexion.EjecutarDB("Delete from Usuarios where IdUsuario=" + IdBuscado);
