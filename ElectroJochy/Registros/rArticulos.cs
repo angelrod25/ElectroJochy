@@ -46,25 +46,25 @@ namespace ElectroJochy.Registros
             if (!Utilitarios.ValidarTextBoxVacio(PrecioTextBox, EP3, "Favor no dejar este campo Vacio"))
                 return;
 
-            ErrorProvider EP4 = new ErrorProvider();
+          /*  ErrorProvider EP4 = new ErrorProvider();
             if (!Utilitarios.ValidarTextBoxVacio(IdSuplidorTextBox, EP4, "Favor no dejar este campo Vacio"))
-                return;
+                return;*/
 
             ErrorProvider EP5 = new ErrorProvider();
             if (!Utilitarios.ValidarTextBoxVacio(DescripcionTextBox, EP5, "Favor no dejar este campo Vacio"))
                 return;
 
-            ErrorProvider EP6 = new ErrorProvider();
+           /* ErrorProvider EP6 = new ErrorProvider();
             if (!Utilitarios.ValidarTextBoxVacio(IdCategoriaTextBox, EP6, "Favor no dejar este campo Vacio"))
-                return;
+                return;*/
 
             Articulo.IdArticulo = Utilitarios.ToInt(IdArticuloTextBox.Text);
             Articulo.Costo = Utilitarios.ToInt(CostoTextBox.Text);
             Articulo.Existencia = Utilitarios.ToInt(ExistenciaTextBox.Text);
             Articulo.Precio = Utilitarios.ToInt(PrecioTextBox.Text);
-            Articulo.IdSuplidor = Utilitarios.ToInt(IdSuplidorTextBox.Text);
+            Articulo.IdSuplidor = Utilitarios.ToInt(SuplidorComboBox.SelectedValue.ToString());
             Articulo.Descripcion = DescripcionTextBox.Text;
-            Articulo.IdCategoria = Utilitarios.ToInt(IdCategoriaTextBox.Text);
+            Articulo.IdCategoria = Utilitarios.ToInt(CategoriaComboBox.SelectedValue.ToString());
 
             if (Articulo.IdArticulo > 0)
             {
@@ -74,7 +74,7 @@ namespace ElectroJochy.Registros
                 CostoTextBox.Clear();
                 ExistenciaTextBox.Clear();
                 PrecioTextBox.Clear();
-                IdSuplidorTextBox.Clear();
+               // IdSuplidorTextBox.Clear();
                 DescripcionTextBox.Clear();
             }
             else
@@ -85,7 +85,7 @@ namespace ElectroJochy.Registros
                 CostoTextBox.Clear();
                 ExistenciaTextBox.Clear();
                 PrecioTextBox.Clear();
-                IdSuplidorTextBox.Clear();
+                //IdSuplidorTextBox.Clear();
                 DescripcionTextBox.Clear();
 
             }
@@ -102,7 +102,7 @@ namespace ElectroJochy.Registros
             CostoTextBox.Clear();
             ExistenciaTextBox.Clear();
             PrecioTextBox.Clear();
-            IdSuplidorTextBox.Clear();
+            //IdSuplidorTextBox.Clear();
             DescripcionTextBox.Clear();
             
         }
@@ -167,6 +167,22 @@ namespace ElectroJochy.Registros
         private void CostoTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void rArticulos_Load(object sender, EventArgs e)
+        {
+            Suplidores Suplidor = new Suplidores();
+
+            SuplidorComboBox.DataSource = Suplidor.Listar("IdSuplidor,Nombre", "1=1");
+            SuplidorComboBox.ValueMember = "IdSuplidor";
+            SuplidorComboBox.DisplayMember = "Nombre";
+
+            Categorias Categoria = new Categorias();
+
+            CategoriaComboBox.DataSource = Categoria.Listar("IdCategoria,Nombre", "1=1");
+            CategoriaComboBox.ValueMember = "IdCategoria";
+            CategoriaComboBox.DisplayMember = "Nombre";
+            
         }
 
 

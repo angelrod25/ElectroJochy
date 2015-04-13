@@ -45,7 +45,7 @@
             this.BuscarButtom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarButtom.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButtom.Image")));
             this.BuscarButtom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuscarButtom.Location = new System.Drawing.Point(728, 11);
+            this.BuscarButtom.Location = new System.Drawing.Point(1123, 11);
             this.BuscarButtom.Name = "BuscarButtom";
             this.BuscarButtom.Size = new System.Drawing.Size(76, 24);
             this.BuscarButtom.TabIndex = 59;
@@ -60,7 +60,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FiltroTextBox.Location = new System.Drawing.Point(243, 15);
             this.FiltroTextBox.Name = "FiltroTextBox";
-            this.FiltroTextBox.Size = new System.Drawing.Size(479, 20);
+            this.FiltroTextBox.Size = new System.Drawing.Size(874, 20);
             this.FiltroTextBox.TabIndex = 58;
             this.FiltroTextBox.TextChanged += new System.EventHandler(this.FiltroTextBox_TextChanged);
             // 
@@ -113,13 +113,14 @@
             this.ArticulosDataGrid.Location = new System.Drawing.Point(15, 39);
             this.ArticulosDataGrid.Name = "ArticulosDataGrid";
             this.ArticulosDataGrid.ReadOnly = true;
-            this.ArticulosDataGrid.Size = new System.Drawing.Size(789, 360);
+            this.ArticulosDataGrid.RowHeadersWidth = 61;
+            this.ArticulosDataGrid.Size = new System.Drawing.Size(1184, 415);
             this.ArticulosDataGrid.TabIndex = 60;
             // 
             // CantidadTextBox
             // 
             this.CantidadTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.CantidadTextBox.Location = new System.Drawing.Point(80, 405);
+            this.CantidadTextBox.Location = new System.Drawing.Point(80, 460);
             this.CantidadTextBox.Name = "CantidadTextBox";
             this.CantidadTextBox.ReadOnly = true;
             this.CantidadTextBox.Size = new System.Drawing.Size(68, 20);
@@ -129,7 +130,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 405);
+            this.label3.Location = new System.Drawing.Point(20, 460);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 61;
@@ -139,7 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 437);
+            this.ClientSize = new System.Drawing.Size(1211, 492);
             this.Controls.Add(this.CantidadTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ArticulosDataGrid);

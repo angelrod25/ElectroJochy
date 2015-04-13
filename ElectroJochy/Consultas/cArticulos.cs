@@ -27,6 +27,7 @@ namespace ElectroJochy.Consultas
 
         private void BuscarButtom_Click(object sender, EventArgs e)
         {
+            Suplidores Suplidor = new Suplidores();
             Articulos Articulo = new Articulos();
             DataTable dt = new DataTable();
             string filtro = "1=1";
