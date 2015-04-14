@@ -53,7 +53,7 @@
             this.LimpiarButtom.Location = new System.Drawing.Point(51, 199);
             this.LimpiarButtom.Name = "LimpiarButtom";
             this.LimpiarButtom.Size = new System.Drawing.Size(87, 33);
-            this.LimpiarButtom.TabIndex = 74;
+            this.LimpiarButtom.TabIndex = 11;
             this.LimpiarButtom.Text = "Limpiar";
             this.LimpiarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LimpiarButtom.UseVisualStyleBackColor = true;
@@ -68,7 +68,7 @@
             this.BorrarButtom.Location = new System.Drawing.Point(240, 199);
             this.BorrarButtom.Name = "BorrarButtom";
             this.BorrarButtom.Size = new System.Drawing.Size(87, 33);
-            this.BorrarButtom.TabIndex = 73;
+            this.BorrarButtom.TabIndex = 13;
             this.BorrarButtom.Text = "Borrar";
             this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrarButtom.UseVisualStyleBackColor = true;
@@ -83,7 +83,7 @@
             this.GuardarButtom.Location = new System.Drawing.Point(146, 199);
             this.GuardarButtom.Name = "GuardarButtom";
             this.GuardarButtom.Size = new System.Drawing.Size(87, 33);
-            this.GuardarButtom.TabIndex = 72;
+            this.GuardarButtom.TabIndex = 12;
             this.GuardarButtom.Text = "Guardar";
             this.GuardarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButtom.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             this.label1.Location = new System.Drawing.Point(62, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
-            this.label1.TabIndex = 75;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Id Cliente:";
             // 
             // label2
@@ -106,7 +106,7 @@
             this.label2.Location = new System.Drawing.Point(62, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
-            this.label2.TabIndex = 76;
+            this.label2.TabIndex = 1;
             this.label2.Text = "Nombre:";
             // 
             // label3
@@ -116,7 +116,7 @@
             this.label3.Location = new System.Drawing.Point(62, 86);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
-            this.label3.TabIndex = 77;
+            this.label3.TabIndex = 2;
             this.label3.Text = "Cédula:";
             // 
             // label4
@@ -126,7 +126,7 @@
             this.label4.Location = new System.Drawing.Point(62, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 13);
-            this.label4.TabIndex = 78;
+            this.label4.TabIndex = 3;
             this.label4.Text = "Teléfono:";
             // 
             // label5
@@ -136,7 +136,7 @@
             this.label5.Location = new System.Drawing.Point(62, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 13);
-            this.label5.TabIndex = 79;
+            this.label5.TabIndex = 4;
             this.label5.Text = "Dirección:";
             // 
             // IdClienteTextBox
@@ -145,7 +145,7 @@
             this.IdClienteTextBox.MaxLength = 4;
             this.IdClienteTextBox.Name = "IdClienteTextBox";
             this.IdClienteTextBox.Size = new System.Drawing.Size(48, 20);
-            this.IdClienteTextBox.TabIndex = 80;
+            this.IdClienteTextBox.TabIndex = 5;
             this.IdClienteTextBox.TextChanged += new System.EventHandler(this.IdClienteTextBox_TextChanged);
             this.IdClienteTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdClienteTextBox_KeyPress);
             // 
@@ -155,7 +155,7 @@
             this.NombreTextBox.MaxLength = 60;
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(212, 20);
-            this.NombreTextBox.TabIndex = 81;
+            this.NombreTextBox.TabIndex = 7;
             this.NombreTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NombreTextBox_KeyPress);
             // 
             // DireccionTextBox
@@ -164,7 +164,7 @@
             this.DireccionTextBox.MaxLength = 125;
             this.DireccionTextBox.Name = "DireccionTextBox";
             this.DireccionTextBox.Size = new System.Drawing.Size(212, 20);
-            this.DireccionTextBox.TabIndex = 84;
+            this.DireccionTextBox.TabIndex = 10;
             // 
             // button1
             // 
@@ -172,7 +172,7 @@
             this.button1.Location = new System.Drawing.Point(199, 1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(34, 29);
-            this.button1.TabIndex = 85;
+            this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // CedulaTextBox
@@ -181,7 +181,7 @@
             this.CedulaTextBox.Mask = "000-0000000-0";
             this.CedulaTextBox.Name = "CedulaTextBox";
             this.CedulaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.CedulaTextBox.TabIndex = 86;
+            this.CedulaTextBox.TabIndex = 8;
             // 
             // TelefonoTextBox
             // 
@@ -189,7 +189,7 @@
             this.TelefonoTextBox.Mask = "999-000-0000";
             this.TelefonoTextBox.Name = "TelefonoTextBox";
             this.TelefonoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.TelefonoTextBox.TabIndex = 87;
+            this.TelefonoTextBox.TabIndex = 9;
             // 
             // rClientes
             // 

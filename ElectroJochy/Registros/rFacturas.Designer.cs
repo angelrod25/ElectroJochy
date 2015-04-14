@@ -61,7 +61,7 @@
             this.label1.Location = new System.Drawing.Point(300, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 24);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Registrar Venta";
             // 
             // label2
@@ -71,7 +71,7 @@
             this.label2.Location = new System.Drawing.Point(39, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Cliente:";
             // 
             // label3
@@ -81,7 +81,7 @@
             this.label3.Location = new System.Drawing.Point(39, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 5;
             this.label3.Text = "Artículo:";
             // 
             // button2
@@ -90,7 +90,7 @@
             this.button2.Location = new System.Drawing.Point(492, 83);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(34, 29);
-            this.button2.TabIndex = 81;
+            this.button2.TabIndex = 7;
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label4
@@ -99,7 +99,7 @@
             this.label4.Location = new System.Drawing.Point(532, 91);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
-            this.label4.TabIndex = 82;
+            this.label4.TabIndex = 8;
             this.label4.Text = "Cantidad:";
             // 
             // FacturaDataGrid
@@ -151,7 +151,7 @@
             this.label5.Location = new System.Drawing.Point(442, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 85;
+            this.label5.TabIndex = 3;
             this.label5.Text = "Tipo:";
             // 
             // label6
@@ -161,7 +161,7 @@
             this.label6.Location = new System.Drawing.Point(512, 581);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 16);
-            this.label6.TabIndex = 87;
+            this.label6.TabIndex = 15;
             this.label6.Text = "Total a pagar:";
             // 
             // textBox1
@@ -170,7 +170,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(92, 20);
-            this.textBox1.TabIndex = 88;
+            this.textBox1.TabIndex = 16;
             // 
             // TotalRenglonesTextBox
             // 
@@ -178,7 +178,7 @@
             this.TotalRenglonesTextBox.Name = "TotalRenglonesTextBox";
             this.TotalRenglonesTextBox.ReadOnly = true;
             this.TotalRenglonesTextBox.Size = new System.Drawing.Size(60, 20);
-            this.TotalRenglonesTextBox.TabIndex = 90;
+            this.TotalRenglonesTextBox.TabIndex = 12;
             // 
             // label7
             // 
@@ -187,7 +187,7 @@
             this.label7.Location = new System.Drawing.Point(39, 580);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 16);
-            this.label7.TabIndex = 89;
+            this.label7.TabIndex = 11;
             this.label7.Text = "Total renglones:";
             // 
             // BorrarButtom
@@ -199,7 +199,7 @@
             this.BorrarButtom.Location = new System.Drawing.Point(374, 572);
             this.BorrarButtom.Name = "BorrarButtom";
             this.BorrarButtom.Size = new System.Drawing.Size(79, 33);
-            this.BorrarButtom.TabIndex = 92;
+            this.BorrarButtom.TabIndex = 14;
             this.BorrarButtom.Text = "Cancelar";
             this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrarButtom.UseVisualStyleBackColor = true;
@@ -213,7 +213,7 @@
             this.GuardarButtom.Location = new System.Drawing.Point(247, 572);
             this.GuardarButtom.Name = "GuardarButtom";
             this.GuardarButtom.Size = new System.Drawing.Size(111, 33);
-            this.GuardarButtom.TabIndex = 91;
+            this.GuardarButtom.TabIndex = 13;
             this.GuardarButtom.Text = "Realizar Venta";
             this.GuardarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButtom.UseVisualStyleBackColor = true;
@@ -226,7 +226,7 @@
             this.ClienteComboBox.Location = new System.Drawing.Point(112, 40);
             this.ClienteComboBox.Name = "ClienteComboBox";
             this.ClienteComboBox.Size = new System.Drawing.Size(256, 21);
-            this.ClienteComboBox.TabIndex = 93;
+            this.ClienteComboBox.TabIndex = 2;
             // 
             // ArticuloComboBox
             // 
@@ -239,7 +239,7 @@
             this.ArticuloComboBox.Location = new System.Drawing.Point(112, 88);
             this.ArticuloComboBox.Name = "ArticuloComboBox";
             this.ArticuloComboBox.Size = new System.Drawing.Size(374, 21);
-            this.ArticuloComboBox.TabIndex = 94;
+            this.ArticuloComboBox.TabIndex = 6;
             // 
             // TipoComboBox
             // 
@@ -252,7 +252,7 @@
             this.TipoComboBox.Location = new System.Drawing.Point(479, 43);
             this.TipoComboBox.Name = "TipoComboBox";
             this.TipoComboBox.Size = new System.Drawing.Size(82, 21);
-            this.TipoComboBox.TabIndex = 95;
+            this.TipoComboBox.TabIndex = 4;
             // 
             // button3
             // 
@@ -263,7 +263,7 @@
             this.button3.Location = new System.Drawing.Point(641, 83);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 26);
-            this.button3.TabIndex = 96;
+            this.button3.TabIndex = 10;
             this.button3.Text = "Agregar";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
@@ -274,7 +274,7 @@
             this.CantidadTextBox.Location = new System.Drawing.Point(581, 88);
             this.CantidadTextBox.Name = "CantidadTextBox";
             this.CantidadTextBox.Size = new System.Drawing.Size(39, 20);
-            this.CantidadTextBox.TabIndex = 97;
+            this.CantidadTextBox.TabIndex = 9;
             this.CantidadTextBox.TextChanged += new System.EventHandler(this.CantidadTextBox_TextChanged);
             this.CantidadTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 

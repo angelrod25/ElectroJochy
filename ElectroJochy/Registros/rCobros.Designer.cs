@@ -53,7 +53,7 @@
             this.label1.Location = new System.Drawing.Point(35, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Id Cobro:";
             // 
             // label3
@@ -63,7 +63,7 @@
             this.label3.Location = new System.Drawing.Point(12, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 13);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 4;
             this.label3.Text = "Monto a pagar:";
             // 
             // IdCobroTextBox
@@ -72,7 +72,7 @@
             this.IdCobroTextBox.MaxLength = 8;
             this.IdCobroTextBox.Name = "IdCobroTextBox";
             this.IdCobroTextBox.Size = new System.Drawing.Size(46, 20);
-            this.IdCobroTextBox.TabIndex = 3;
+            this.IdCobroTextBox.TabIndex = 5;
             // 
             // MontoTextBox
             // 
@@ -80,7 +80,7 @@
             this.MontoTextBox.MaxLength = 9;
             this.MontoTextBox.Name = "MontoTextBox";
             this.MontoTextBox.Size = new System.Drawing.Size(75, 20);
-            this.MontoTextBox.TabIndex = 5;
+            this.MontoTextBox.TabIndex = 9;
             this.MontoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // button1
@@ -89,7 +89,7 @@
             this.button1.Location = new System.Drawing.Point(156, 33);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(34, 29);
-            this.button1.TabIndex = 81;
+            this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // ConceptoTextBox
@@ -98,7 +98,7 @@
             this.ConceptoTextBox.MaxLength = 100;
             this.ConceptoTextBox.Name = "ConceptoTextBox";
             this.ConceptoTextBox.Size = new System.Drawing.Size(298, 20);
-            this.ConceptoTextBox.TabIndex = 83;
+            this.ConceptoTextBox.TabIndex = 8;
             // 
             // label2
             // 
@@ -107,7 +107,7 @@
             this.label2.Location = new System.Drawing.Point(35, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
-            this.label2.TabIndex = 82;
+            this.label2.TabIndex = 3;
             this.label2.Text = "Concepto:";
             // 
             // BorrarButtom
@@ -119,7 +119,7 @@
             this.BorrarButtom.Location = new System.Drawing.Point(224, 172);
             this.BorrarButtom.Name = "BorrarButtom";
             this.BorrarButtom.Size = new System.Drawing.Size(75, 33);
-            this.BorrarButtom.TabIndex = 85;
+            this.BorrarButtom.TabIndex = 11;
             this.BorrarButtom.Text = "Borrar";
             this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrarButtom.UseVisualStyleBackColor = true;
@@ -134,7 +134,7 @@
             this.GuardarButtom.Location = new System.Drawing.Point(143, 172);
             this.GuardarButtom.Name = "GuardarButtom";
             this.GuardarButtom.Size = new System.Drawing.Size(75, 33);
-            this.GuardarButtom.TabIndex = 84;
+            this.GuardarButtom.TabIndex = 10;
             this.GuardarButtom.Text = "Guardar";
             this.GuardarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButtom.UseVisualStyleBackColor = true;
@@ -147,7 +147,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(454, 24);
-            this.menuStrip1.TabIndex = 86;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // ayudaToolStripMenuItem
@@ -173,7 +173,7 @@
             this.ClienteComboBox.Location = new System.Drawing.Point(106, 68);
             this.ClienteComboBox.Name = "ClienteComboBox";
             this.ClienteComboBox.Size = new System.Drawing.Size(296, 21);
-            this.ClienteComboBox.TabIndex = 95;
+            this.ClienteComboBox.TabIndex = 7;
             // 
             // label4
             // 
@@ -182,7 +182,7 @@
             this.label4.Location = new System.Drawing.Point(33, 71);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 13);
-            this.label4.TabIndex = 94;
+            this.label4.TabIndex = 2;
             this.label4.Text = "Cliente:";
             // 
             // rCobros

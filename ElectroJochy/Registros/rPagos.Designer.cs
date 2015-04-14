@@ -55,7 +55,7 @@
             this.IdPagoTextBox.MaxLength = 4;
             this.IdPagoTextBox.Name = "IdPagoTextBox";
             this.IdPagoTextBox.Size = new System.Drawing.Size(42, 20);
-            this.IdPagoTextBox.TabIndex = 1;
+            this.IdPagoTextBox.TabIndex = 3;
             this.IdPagoTextBox.TextChanged += new System.EventHandler(this.IdPagoTextBox_TextChanged);
             this.IdPagoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdPagoTextBox_KeyPress);
             // 
@@ -65,7 +65,7 @@
             this.label2.Location = new System.Drawing.Point(16, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 1;
             this.label2.Text = "Concepto:";
             // 
             // label3
@@ -74,7 +74,7 @@
             this.label3.Location = new System.Drawing.Point(16, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 13);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 2;
             this.label3.Text = "Monto a pagar:";
             // 
             // ConceptoTextBox
@@ -102,7 +102,7 @@
             this.LimpiarButtom.Location = new System.Drawing.Point(37, 152);
             this.LimpiarButtom.Name = "LimpiarButtom";
             this.LimpiarButtom.Size = new System.Drawing.Size(75, 33);
-            this.LimpiarButtom.TabIndex = 64;
+            this.LimpiarButtom.TabIndex = 6;
             this.LimpiarButtom.Text = "Limpiar";
             this.LimpiarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LimpiarButtom.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             this.BorrarButtom.Location = new System.Drawing.Point(199, 152);
             this.BorrarButtom.Name = "BorrarButtom";
             this.BorrarButtom.Size = new System.Drawing.Size(75, 33);
-            this.BorrarButtom.TabIndex = 63;
+            this.BorrarButtom.TabIndex = 8;
             this.BorrarButtom.Text = "Borrar";
             this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrarButtom.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@
             this.GuardarButtom.Location = new System.Drawing.Point(118, 152);
             this.GuardarButtom.Name = "GuardarButtom";
             this.GuardarButtom.Size = new System.Drawing.Size(75, 33);
-            this.GuardarButtom.TabIndex = 62;
+            this.GuardarButtom.TabIndex = 7;
             this.GuardarButtom.Text = "Guardar";
             this.GuardarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButtom.UseVisualStyleBackColor = true;

@@ -66,7 +66,7 @@
             this.label2.Location = new System.Drawing.Point(16, 268);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 13);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 5;
             this.label2.Text = "Descripción";
             // 
             // label3
@@ -76,7 +76,7 @@
             this.label3.Location = new System.Drawing.Point(15, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 1;
             this.label3.Text = "Costo:";
             // 
             // label4
@@ -96,7 +96,7 @@
             this.label5.Location = new System.Drawing.Point(15, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 13);
-            this.label5.TabIndex = 4;
+            this.label5.TabIndex = 2;
             this.label5.Text = "Existencia:";
             // 
             // label6
@@ -106,7 +106,7 @@
             this.label6.Location = new System.Drawing.Point(16, 222);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 13);
-            this.label6.TabIndex = 5;
+            this.label6.TabIndex = 4;
             this.label6.Text = "Suplidor:";
             // 
             // IdArticuloTextBox
@@ -118,7 +118,7 @@
             this.IdArticuloTextBox.MaxLength = 9;
             this.IdArticuloTextBox.Name = "IdArticuloTextBox";
             this.IdArticuloTextBox.Size = new System.Drawing.Size(53, 20);
-            this.IdArticuloTextBox.TabIndex = 6;
+            this.IdArticuloTextBox.TabIndex = 7;
             this.IdArticuloTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdArticuloTextBox_KeyPress);
             // 
             // DescripcionTextBox
@@ -130,7 +130,7 @@
             this.DescripcionTextBox.MaxLength = 125;
             this.DescripcionTextBox.Name = "DescripcionTextBox";
             this.DescripcionTextBox.Size = new System.Drawing.Size(218, 20);
-            this.DescripcionTextBox.TabIndex = 7;
+            this.DescripcionTextBox.TabIndex = 12;
             this.DescripcionTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DescripcionTextBox_KeyPress);
             // 
             // CostoTextBox
@@ -154,7 +154,7 @@
             this.PrecioTextBox.MaxLength = 9;
             this.PrecioTextBox.Name = "PrecioTextBox";
             this.PrecioTextBox.Size = new System.Drawing.Size(100, 20);
-            this.PrecioTextBox.TabIndex = 9;
+            this.PrecioTextBox.TabIndex = 10;
             this.PrecioTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PrecioTextBox_KeyPress);
             // 
             // ExistenciaTextBox
@@ -166,7 +166,7 @@
             this.ExistenciaTextBox.MaxLength = 8;
             this.ExistenciaTextBox.Name = "ExistenciaTextBox";
             this.ExistenciaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.ExistenciaTextBox.TabIndex = 10;
+            this.ExistenciaTextBox.TabIndex = 9;
             this.ExistenciaTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ExistenciaTextBox_KeyPress);
             // 
             // label7
@@ -176,7 +176,7 @@
             this.label7.Location = new System.Drawing.Point(16, 306);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 13);
-            this.label7.TabIndex = 12;
+            this.label7.TabIndex = 6;
             this.label7.Text = "Categoria:";
             // 
             // LimpiarButtom
@@ -187,7 +187,7 @@
             this.LimpiarButtom.Location = new System.Drawing.Point(46, 346);
             this.LimpiarButtom.Name = "LimpiarButtom";
             this.LimpiarButtom.Size = new System.Drawing.Size(75, 33);
-            this.LimpiarButtom.TabIndex = 61;
+            this.LimpiarButtom.TabIndex = 17;
             this.LimpiarButtom.Text = "Limpiar";
             this.LimpiarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LimpiarButtom.UseVisualStyleBackColor = true;
@@ -202,7 +202,7 @@
             this.BorrarButtom.Location = new System.Drawing.Point(208, 346);
             this.BorrarButtom.Name = "BorrarButtom";
             this.BorrarButtom.Size = new System.Drawing.Size(75, 33);
-            this.BorrarButtom.TabIndex = 60;
+            this.BorrarButtom.TabIndex = 16;
             this.BorrarButtom.Text = "Borrar";
             this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrarButtom.UseVisualStyleBackColor = true;
@@ -217,7 +217,7 @@
             this.GuardarButtom.Location = new System.Drawing.Point(127, 346);
             this.GuardarButtom.Name = "GuardarButtom";
             this.GuardarButtom.Size = new System.Drawing.Size(75, 33);
-            this.GuardarButtom.TabIndex = 59;
+            this.GuardarButtom.TabIndex = 15;
             this.GuardarButtom.Text = "Guardar";
             this.GuardarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButtom.UseVisualStyleBackColor = true;
@@ -232,7 +232,7 @@
             this.BuscarButtom.Location = new System.Drawing.Point(150, 24);
             this.BuscarButtom.Name = "BuscarButtom";
             this.BuscarButtom.Size = new System.Drawing.Size(34, 29);
-            this.BuscarButtom.TabIndex = 63;
+            this.BuscarButtom.TabIndex = 14;
             this.BuscarButtom.UseVisualStyleBackColor = true;
             this.BuscarButtom.Click += new System.EventHandler(this.BuscarButtom_Click);
             // 
@@ -246,7 +246,7 @@
             this.SuplidorComboBox.Location = new System.Drawing.Point(87, 222);
             this.SuplidorComboBox.Name = "SuplidorComboBox";
             this.SuplidorComboBox.Size = new System.Drawing.Size(218, 21);
-            this.SuplidorComboBox.TabIndex = 64;
+            this.SuplidorComboBox.TabIndex = 11;
             // 
             // CategoriaComboBox
             // 
@@ -258,7 +258,7 @@
             this.CategoriaComboBox.Location = new System.Drawing.Point(88, 306);
             this.CategoriaComboBox.Name = "CategoriaComboBox";
             this.CategoriaComboBox.Size = new System.Drawing.Size(149, 21);
-            this.CategoriaComboBox.TabIndex = 65;
+            this.CategoriaComboBox.TabIndex = 13;
             // 
             // rArticulos
             // 

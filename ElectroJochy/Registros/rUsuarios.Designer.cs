@@ -53,7 +53,7 @@
             this.EmailTextBox.MaxLength = 100;
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(133, 20);
-            this.EmailTextBox.TabIndex = 81;
+            this.EmailTextBox.TabIndex = 11;
             // 
             // ContrasenaTextBox
             // 
@@ -61,7 +61,7 @@
             this.ContrasenaTextBox.MaxLength = 25;
             this.ContrasenaTextBox.Name = "ContrasenaTextBox";
             this.ContrasenaTextBox.Size = new System.Drawing.Size(133, 20);
-            this.ContrasenaTextBox.TabIndex = 80;
+            this.ContrasenaTextBox.TabIndex = 10;
             // 
             // UsuarioTextBox
             // 
@@ -69,7 +69,7 @@
             this.UsuarioTextBox.MaxLength = 25;
             this.UsuarioTextBox.Name = "UsuarioTextBox";
             this.UsuarioTextBox.Size = new System.Drawing.Size(133, 20);
-            this.UsuarioTextBox.TabIndex = 79;
+            this.UsuarioTextBox.TabIndex = 9;
             // 
             // NombreCompletoTextBox
             // 
@@ -77,7 +77,7 @@
             this.NombreCompletoTextBox.MaxLength = 60;
             this.NombreCompletoTextBox.Name = "NombreCompletoTextBox";
             this.NombreCompletoTextBox.Size = new System.Drawing.Size(143, 20);
-            this.NombreCompletoTextBox.TabIndex = 78;
+            this.NombreCompletoTextBox.TabIndex = 8;
             this.NombreCompletoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NombreCompletoTextBox_KeyPress);
             // 
             // IdUsuarioTextBox
@@ -86,7 +86,7 @@
             this.IdUsuarioTextBox.MaxLength = 2;
             this.IdUsuarioTextBox.Name = "IdUsuarioTextBox";
             this.IdUsuarioTextBox.Size = new System.Drawing.Size(44, 20);
-            this.IdUsuarioTextBox.TabIndex = 77;
+            this.IdUsuarioTextBox.TabIndex = 6;
             this.IdUsuarioTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdUsuarioTextBox_KeyPress);
             // 
             // label6
@@ -96,7 +96,7 @@
             this.label6.Location = new System.Drawing.Point(56, 176);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 13);
-            this.label6.TabIndex = 76;
+            this.label6.TabIndex = 4;
             this.label6.Text = "Email:";
             // 
             // label5
@@ -106,7 +106,7 @@
             this.label5.Location = new System.Drawing.Point(53, 137);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 13);
-            this.label5.TabIndex = 75;
+            this.label5.TabIndex = 3;
             this.label5.Text = "Contraseña:";
             // 
             // label4
@@ -116,7 +116,7 @@
             this.label4.Location = new System.Drawing.Point(53, 100);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 74;
+            this.label4.TabIndex = 2;
             this.label4.Text = "Usuario:";
             // 
             // label3
@@ -126,7 +126,7 @@
             this.label3.Location = new System.Drawing.Point(53, 53);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 13);
-            this.label3.TabIndex = 73;
+            this.label3.TabIndex = 1;
             this.label3.Text = "Nombre Completo:";
             // 
             // label1
@@ -136,7 +136,7 @@
             this.label1.Location = new System.Drawing.Point(53, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 13);
-            this.label1.TabIndex = 72;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Id Usuario:";
             // 
             // LimpiarButtom
@@ -147,7 +147,7 @@
             this.LimpiarButtom.Location = new System.Drawing.Point(49, 246);
             this.LimpiarButtom.Name = "LimpiarButtom";
             this.LimpiarButtom.Size = new System.Drawing.Size(75, 33);
-            this.LimpiarButtom.TabIndex = 71;
+            this.LimpiarButtom.TabIndex = 13;
             this.LimpiarButtom.Text = "Limpiar";
             this.LimpiarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LimpiarButtom.UseVisualStyleBackColor = true;
@@ -162,7 +162,7 @@
             this.BorrarButtom.Location = new System.Drawing.Point(211, 246);
             this.BorrarButtom.Name = "BorrarButtom";
             this.BorrarButtom.Size = new System.Drawing.Size(75, 33);
-            this.BorrarButtom.TabIndex = 70;
+            this.BorrarButtom.TabIndex = 15;
             this.BorrarButtom.Text = "Borrar";
             this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrarButtom.UseVisualStyleBackColor = true;
@@ -177,7 +177,7 @@
             this.GuardarButtom.Location = new System.Drawing.Point(130, 246);
             this.GuardarButtom.Name = "GuardarButtom";
             this.GuardarButtom.Size = new System.Drawing.Size(75, 33);
-            this.GuardarButtom.TabIndex = 69;
+            this.GuardarButtom.TabIndex = 14;
             this.GuardarButtom.Text = "Guardar";
             this.GuardarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButtom.UseVisualStyleBackColor = true;
@@ -190,7 +190,7 @@
             this.label2.Location = new System.Drawing.Point(56, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 13);
-            this.label2.TabIndex = 82;
+            this.label2.TabIndex = 5;
             this.label2.Text = "Nivel de Acceso:";
             // 
             // NivelAccesoTextBox
@@ -199,7 +199,7 @@
             this.NivelAccesoTextBox.MaxLength = 1;
             this.NivelAccesoTextBox.Name = "NivelAccesoTextBox";
             this.NivelAccesoTextBox.Size = new System.Drawing.Size(52, 20);
-            this.NivelAccesoTextBox.TabIndex = 83;
+            this.NivelAccesoTextBox.TabIndex = 12;
             this.NivelAccesoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NivelAccesoTextBox_KeyPress);
             // 
             // button1
@@ -208,7 +208,7 @@
             this.button1.Location = new System.Drawing.Point(227, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(34, 29);
-            this.button1.TabIndex = 84;
+            this.button1.TabIndex = 7;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // rUsuarios

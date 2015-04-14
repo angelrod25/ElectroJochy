@@ -47,7 +47,7 @@
             this.LimpiarButtom.Location = new System.Drawing.Point(36, 110);
             this.LimpiarButtom.Name = "LimpiarButtom";
             this.LimpiarButtom.Size = new System.Drawing.Size(75, 33);
-            this.LimpiarButtom.TabIndex = 74;
+            this.LimpiarButtom.TabIndex = 6;
             this.LimpiarButtom.Text = "Limpiar";
             this.LimpiarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LimpiarButtom.UseVisualStyleBackColor = true;
@@ -62,7 +62,7 @@
             this.BorrarButtom.Location = new System.Drawing.Point(198, 110);
             this.BorrarButtom.Name = "BorrarButtom";
             this.BorrarButtom.Size = new System.Drawing.Size(75, 33);
-            this.BorrarButtom.TabIndex = 73;
+            this.BorrarButtom.TabIndex = 7;
             this.BorrarButtom.Text = "Borrar";
             this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrarButtom.UseVisualStyleBackColor = true;
@@ -77,7 +77,7 @@
             this.GuardarButtom.Location = new System.Drawing.Point(117, 110);
             this.GuardarButtom.Name = "GuardarButtom";
             this.GuardarButtom.Size = new System.Drawing.Size(75, 33);
-            this.GuardarButtom.TabIndex = 72;
+            this.GuardarButtom.TabIndex = 5;
             this.GuardarButtom.Text = "Guardar";
             this.GuardarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButtom.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@
             this.label1.Location = new System.Drawing.Point(39, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 13);
-            this.label1.TabIndex = 75;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Nombre:";
             // 
             // NombreTextBox
@@ -98,7 +98,7 @@
             this.NombreTextBox.MaxLength = 20;
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(181, 20);
-            this.NombreTextBox.TabIndex = 76;
+            this.NombreTextBox.TabIndex = 3;
             this.NombreTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NombreTextBox_KeyPress);
             // 
             // IdCategoriaTextBox
@@ -107,7 +107,7 @@
             this.IdCategoriaTextBox.MaxLength = 2;
             this.IdCategoriaTextBox.Name = "IdCategoriaTextBox";
             this.IdCategoriaTextBox.Size = new System.Drawing.Size(30, 20);
-            this.IdCategoriaTextBox.TabIndex = 77;
+            this.IdCategoriaTextBox.TabIndex = 2;
             this.IdCategoriaTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdCategoriaTextBox_KeyPress);
             // 
             // label2
@@ -116,7 +116,7 @@
             this.label2.Location = new System.Drawing.Point(42, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 78;
+            this.label2.TabIndex = 0;
             this.label2.Text = "IdCategoría:";
             // 
             // button1
@@ -125,7 +125,7 @@
             this.button1.Location = new System.Drawing.Point(158, 22);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(34, 29);
-            this.button1.TabIndex = 79;
+            this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // rCategorias

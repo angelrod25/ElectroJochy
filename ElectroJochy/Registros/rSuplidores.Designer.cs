@@ -49,7 +49,7 @@
             this.button1.Location = new System.Drawing.Point(149, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(34, 29);
-            this.button1.TabIndex = 87;
+            this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label2
@@ -58,7 +58,7 @@
             this.label2.Location = new System.Drawing.Point(12, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
-            this.label2.TabIndex = 86;
+            this.label2.TabIndex = 0;
             this.label2.Text = "IdSuplidor:";
             // 
             // IdSuplidorTextBox
@@ -67,7 +67,7 @@
             this.IdSuplidorTextBox.MaxLength = 3;
             this.IdSuplidorTextBox.Name = "IdSuplidorTextBox";
             this.IdSuplidorTextBox.Size = new System.Drawing.Size(30, 20);
-            this.IdSuplidorTextBox.TabIndex = 85;
+            this.IdSuplidorTextBox.TabIndex = 4;
             this.IdSuplidorTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdSuplidorTextBox_KeyPress);
             // 
             // NombreTextBox
@@ -76,7 +76,7 @@
             this.NombreTextBox.MaxLength = 75;
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(156, 20);
-            this.NombreTextBox.TabIndex = 84;
+            this.NombreTextBox.TabIndex = 6;
             this.NombreTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NombreTextBox_KeyPress);
             // 
             // label1
@@ -85,7 +85,7 @@
             this.label1.Location = new System.Drawing.Point(12, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 13);
-            this.label1.TabIndex = 83;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Nombre Empresa:";
             // 
             // LimpiarButtom
@@ -96,7 +96,7 @@
             this.LimpiarButtom.Location = new System.Drawing.Point(10, 151);
             this.LimpiarButtom.Name = "LimpiarButtom";
             this.LimpiarButtom.Size = new System.Drawing.Size(75, 33);
-            this.LimpiarButtom.TabIndex = 82;
+            this.LimpiarButtom.TabIndex = 9;
             this.LimpiarButtom.Text = "Limpiar";
             this.LimpiarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LimpiarButtom.UseVisualStyleBackColor = true;
@@ -111,7 +111,7 @@
             this.BorrarButtom.Location = new System.Drawing.Point(172, 151);
             this.BorrarButtom.Name = "BorrarButtom";
             this.BorrarButtom.Size = new System.Drawing.Size(75, 33);
-            this.BorrarButtom.TabIndex = 81;
+            this.BorrarButtom.TabIndex = 11;
             this.BorrarButtom.Text = "Borrar";
             this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BorrarButtom.UseVisualStyleBackColor = true;
@@ -126,7 +126,7 @@
             this.GuardarButtom.Location = new System.Drawing.Point(91, 151);
             this.GuardarButtom.Name = "GuardarButtom";
             this.GuardarButtom.Size = new System.Drawing.Size(75, 33);
-            this.GuardarButtom.TabIndex = 80;
+            this.GuardarButtom.TabIndex = 10;
             this.GuardarButtom.Text = "Guardar";
             this.GuardarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButtom.UseVisualStyleBackColor = true;
@@ -138,7 +138,7 @@
             this.label3.Location = new System.Drawing.Point(12, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 88;
+            this.label3.TabIndex = 2;
             this.label3.Text = "Teléfono:";
             // 
             // label4
@@ -147,7 +147,7 @@
             this.label4.Location = new System.Drawing.Point(12, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 13);
-            this.label4.TabIndex = 89;
+            this.label4.TabIndex = 3;
             this.label4.Text = "RNC / Cédula:";
             // 
             // RNCTextBox
@@ -156,7 +156,7 @@
             this.RNCTextBox.MaxLength = 13;
             this.RNCTextBox.Name = "RNCTextBox";
             this.RNCTextBox.Size = new System.Drawing.Size(100, 20);
-            this.RNCTextBox.TabIndex = 91;
+            this.RNCTextBox.TabIndex = 8;
             // 
             // TelefonoMaskedBox
             // 
@@ -164,7 +164,7 @@
             this.TelefonoMaskedBox.Mask = "999-000-0000";
             this.TelefonoMaskedBox.Name = "TelefonoMaskedBox";
             this.TelefonoMaskedBox.Size = new System.Drawing.Size(100, 20);
-            this.TelefonoMaskedBox.TabIndex = 92;
+            this.TelefonoMaskedBox.TabIndex = 7;
             // 
             // rSuplidores
             // 
