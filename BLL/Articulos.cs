@@ -71,13 +71,13 @@ namespace BLL
            {
                Encontro = true;
 
-               this.IdArticulo = (int)dt.Rows[0]["IdArticulo"];
-               this.Costo = (float)dt.Rows[0]["Costo"];
-               this.Precio = (float)dt.Rows[0]["Precio"];
+               this.IdArticulo = Convert.ToInt32(dt.Rows[0]["IdArticulo"]);
+               this.Costo = Convert.ToSingle(dt.Rows[0]["Costo"]);
+               this.Precio = Convert.ToSingle(dt.Rows[0]["Precio"]);
                this.Descripcion = dt.Rows[0]["Descripcion"].ToString();
-               this.Existencia = (float)dt.Rows[0]["Existencia"];
-               this.IdSuplidor = (int)dt.Rows[0]["IdSuplidor"];
-               this.IdCategoria = (int)dt.Rows[0]["IdCategoria"];
+               this.Existencia = Convert.ToSingle(dt.Rows[0]["Existencia"]);
+               this.IdSuplidor = Convert.ToInt32(dt.Rows[0]["IdSuplidor"]);
+               this.IdCategoria = Convert.ToInt32(dt.Rows[0]["IdCategoria"]);
 
                return true;
 
