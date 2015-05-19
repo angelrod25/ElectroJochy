@@ -44,14 +44,18 @@ namespace ElectroJochy.Registros
             return;
 
                 FacturaDataGrid.Rows.Add();
-                FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[0].Value = CantidadTextBox.Text;
-                FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[1].Value = ArticuloComboBox.Text;
-                Articulo.Buscar((int)ArticuloComboBox.SelectedValue);
 
-                FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[2].Value = Articulo.Precio ;
-                // precio total: FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[3].Value = ArticuloComboBox.Text;
+                FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[0].Value = CantidadTextBox.Text; // Columna "Cantidad"
 
-                TotalRenglonesTextBox.Text = FacturaDataGrid.RowCount.ToString();
+                FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[1].Value = ArticuloComboBox.Text; // Columna "Descripcion"
+
+                Articulo.Buscar((int)ArticuloComboBox.SelectedValue); // El boton buscar que busca los datos del articulo 
+
+                FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[2].Value = Articulo.Precio; // Columna "Precio"
+
+                FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[3].Value =           // Columna "Importe" (Aqui se multiplica)
+
+                TotalRenglonesTextBox.Text = FacturaDataGrid.RowCount.ToString(); // Celda que calcula "Total de Renglones"
         }
 
 
@@ -67,6 +71,16 @@ namespace ElectroJochy.Registros
         }
 
         private void FacturaDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -35,10 +35,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.FacturaDataGrid = new System.Windows.Forms.DataGridView();
-            this.Cant = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descrip = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -51,6 +47,14 @@
             this.TipoComboBox = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.CantidadTextBox = new System.Windows.Forms.TextBox();
+            this.Cant = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descrip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.FacturaDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,13 +115,146 @@
             this.Cant,
             this.Descrip,
             this.PUnitario,
-            this.PrecioTotal});
+            this.Importe});
             this.FacturaDataGrid.Location = new System.Drawing.Point(42, 114);
             this.FacturaDataGrid.Name = "FacturaDataGrid";
             this.FacturaDataGrid.ReadOnly = true;
             this.FacturaDataGrid.Size = new System.Drawing.Size(674, 445);
             this.FacturaDataGrid.TabIndex = 84;
             this.FacturaDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FacturaDataGrid_CellContentClick);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(442, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Tipo:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(512, 616);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 16);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Total a pagar:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(624, 615);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(92, 20);
+            this.textBox1.TabIndex = 16;
+            // 
+            // TotalRenglonesTextBox
+            // 
+            this.TotalRenglonesTextBox.Location = new System.Drawing.Point(170, 616);
+            this.TotalRenglonesTextBox.Name = "TotalRenglonesTextBox";
+            this.TotalRenglonesTextBox.ReadOnly = true;
+            this.TotalRenglonesTextBox.Size = new System.Drawing.Size(60, 20);
+            this.TotalRenglonesTextBox.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(43, 616);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(121, 16);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Total renglones:";
+            // 
+            // BorrarButtom
+            // 
+            this.BorrarButtom.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BorrarButtom.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BorrarButtom.Image = ((System.Drawing.Image)(resources.GetObject("BorrarButtom.Image")));
+            this.BorrarButtom.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BorrarButtom.Location = new System.Drawing.Point(375, 608);
+            this.BorrarButtom.Name = "BorrarButtom";
+            this.BorrarButtom.Size = new System.Drawing.Size(79, 33);
+            this.BorrarButtom.TabIndex = 14;
+            this.BorrarButtom.Text = "Cancelar";
+            this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BorrarButtom.UseVisualStyleBackColor = true;
+            // 
+            // GuardarButtom
+            // 
+            this.GuardarButtom.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.GuardarButtom.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.GuardarButtom.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButtom.Image")));
+            this.GuardarButtom.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.GuardarButtom.Location = new System.Drawing.Point(248, 608);
+            this.GuardarButtom.Name = "GuardarButtom";
+            this.GuardarButtom.Size = new System.Drawing.Size(111, 33);
+            this.GuardarButtom.TabIndex = 13;
+            this.GuardarButtom.Text = "Realizar Venta";
+            this.GuardarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GuardarButtom.UseVisualStyleBackColor = true;
+            // 
+            // ClienteComboBox
+            // 
+            this.ClienteComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ClienteComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ClienteComboBox.FormattingEnabled = true;
+            this.ClienteComboBox.Location = new System.Drawing.Point(114, 40);
+            this.ClienteComboBox.Name = "ClienteComboBox";
+            this.ClienteComboBox.Size = new System.Drawing.Size(256, 21);
+            this.ClienteComboBox.TabIndex = 2;
+            // 
+            // ArticuloComboBox
+            // 
+            this.ArticuloComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ArticuloComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ArticuloComboBox.FormattingEnabled = true;
+            this.ArticuloComboBox.Items.AddRange(new object[] {
+            "IdCuenta",
+            "Descripcion"});
+            this.ArticuloComboBox.Location = new System.Drawing.Point(114, 88);
+            this.ArticuloComboBox.Name = "ArticuloComboBox";
+            this.ArticuloComboBox.Size = new System.Drawing.Size(374, 21);
+            this.ArticuloComboBox.TabIndex = 6;
+            // 
+            // TipoComboBox
+            // 
+            this.TipoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TipoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TipoComboBox.FormattingEnabled = true;
+            this.TipoComboBox.Items.AddRange(new object[] {
+            "Contado",
+            "Crédito"});
+            this.TipoComboBox.Location = new System.Drawing.Point(481, 43);
+            this.TipoComboBox.Name = "TipoComboBox";
+            this.TipoComboBox.Size = new System.Drawing.Size(82, 21);
+            this.TipoComboBox.TabIndex = 4;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(641, 82);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 26);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Agregar";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // CantidadTextBox
+            // 
+            this.CantidadTextBox.Location = new System.Drawing.Point(581, 88);
+            this.CantidadTextBox.Name = "CantidadTextBox";
+            this.CantidadTextBox.Size = new System.Drawing.Size(54, 20);
+            this.CantidadTextBox.TabIndex = 9;
+            this.CantidadTextBox.TextChanged += new System.EventHandler(this.CantidadTextBox_TextChanged);
+            this.CantidadTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // Cant
             // 
@@ -138,151 +275,60 @@
             this.PUnitario.Name = "PUnitario";
             this.PUnitario.ReadOnly = true;
             // 
-            // PrecioTotal
+            // Importe
             // 
-            this.PrecioTotal.HeaderText = "Precio Total";
-            this.PrecioTotal.Name = "PrecioTotal";
-            this.PrecioTotal.ReadOnly = true;
-            this.PrecioTotal.Width = 125;
+            this.Importe.HeaderText = "Importe";
+            this.Importe.Name = "Importe";
+            this.Importe.ReadOnly = true;
+            this.Importe.Width = 125;
             // 
-            // label5
+            // textBox2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(442, 46);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Tipo:";
+            this.textBox2.Location = new System.Drawing.Point(624, 565);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(92, 20);
+            this.textBox2.TabIndex = 86;
             // 
-            // label6
+            // label8
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(512, 581);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 16);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Total a pagar:";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(539, 566);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 16);
+            this.label8.TabIndex = 85;
+            this.label8.Text = "Sub Total:";
             // 
-            // textBox1
+            // textBox3
             // 
-            this.textBox1.Location = new System.Drawing.Point(624, 580);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(92, 20);
-            this.textBox1.TabIndex = 16;
+            this.textBox3.Location = new System.Drawing.Point(624, 589);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(92, 20);
+            this.textBox3.TabIndex = 88;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // TotalRenglonesTextBox
+            // label9
             // 
-            this.TotalRenglonesTextBox.Location = new System.Drawing.Point(166, 580);
-            this.TotalRenglonesTextBox.Name = "TotalRenglonesTextBox";
-            this.TotalRenglonesTextBox.ReadOnly = true;
-            this.TotalRenglonesTextBox.Size = new System.Drawing.Size(60, 20);
-            this.TotalRenglonesTextBox.TabIndex = 12;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(39, 580);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 16);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Total renglones:";
-            // 
-            // BorrarButtom
-            // 
-            this.BorrarButtom.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BorrarButtom.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BorrarButtom.Image = ((System.Drawing.Image)(resources.GetObject("BorrarButtom.Image")));
-            this.BorrarButtom.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BorrarButtom.Location = new System.Drawing.Point(374, 572);
-            this.BorrarButtom.Name = "BorrarButtom";
-            this.BorrarButtom.Size = new System.Drawing.Size(79, 33);
-            this.BorrarButtom.TabIndex = 14;
-            this.BorrarButtom.Text = "Cancelar";
-            this.BorrarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BorrarButtom.UseVisualStyleBackColor = true;
-            // 
-            // GuardarButtom
-            // 
-            this.GuardarButtom.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.GuardarButtom.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.GuardarButtom.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButtom.Image")));
-            this.GuardarButtom.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.GuardarButtom.Location = new System.Drawing.Point(247, 572);
-            this.GuardarButtom.Name = "GuardarButtom";
-            this.GuardarButtom.Size = new System.Drawing.Size(111, 33);
-            this.GuardarButtom.TabIndex = 13;
-            this.GuardarButtom.Text = "Realizar Venta";
-            this.GuardarButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButtom.UseVisualStyleBackColor = true;
-            // 
-            // ClienteComboBox
-            // 
-            this.ClienteComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ClienteComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ClienteComboBox.FormattingEnabled = true;
-            this.ClienteComboBox.Location = new System.Drawing.Point(112, 40);
-            this.ClienteComboBox.Name = "ClienteComboBox";
-            this.ClienteComboBox.Size = new System.Drawing.Size(256, 21);
-            this.ClienteComboBox.TabIndex = 2;
-            // 
-            // ArticuloComboBox
-            // 
-            this.ArticuloComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ArticuloComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ArticuloComboBox.FormattingEnabled = true;
-            this.ArticuloComboBox.Items.AddRange(new object[] {
-            "IdCuenta",
-            "Descripcion"});
-            this.ArticuloComboBox.Location = new System.Drawing.Point(112, 88);
-            this.ArticuloComboBox.Name = "ArticuloComboBox";
-            this.ArticuloComboBox.Size = new System.Drawing.Size(374, 21);
-            this.ArticuloComboBox.TabIndex = 6;
-            // 
-            // TipoComboBox
-            // 
-            this.TipoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TipoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.TipoComboBox.FormattingEnabled = true;
-            this.TipoComboBox.Items.AddRange(new object[] {
-            "Contado",
-            "Crédito"});
-            this.TipoComboBox.Location = new System.Drawing.Point(479, 43);
-            this.TipoComboBox.Name = "TipoComboBox";
-            this.TipoComboBox.Size = new System.Drawing.Size(82, 21);
-            this.TipoComboBox.TabIndex = 4;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(641, 83);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 26);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Agregar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // CantidadTextBox
-            // 
-            this.CantidadTextBox.Location = new System.Drawing.Point(581, 88);
-            this.CantidadTextBox.Name = "CantidadTextBox";
-            this.CantidadTextBox.Size = new System.Drawing.Size(39, 20);
-            this.CantidadTextBox.TabIndex = 9;
-            this.CantidadTextBox.TextChanged += new System.EventHandler(this.CantidadTextBox_TextChanged);
-            this.CantidadTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(568, 590);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(50, 16);
+            this.label9.TabIndex = 87;
+            this.label9.Text = "ITBIS:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // rFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 617);
+            this.ClientSize = new System.Drawing.Size(745, 653);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.CantidadTextBox);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.TipoComboBox);
@@ -330,10 +376,14 @@
         private System.Windows.Forms.ComboBox ArticuloComboBox;
         private System.Windows.Forms.ComboBox TipoComboBox;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox CantidadTextBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cant;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descrip;
         private System.Windows.Forms.DataGridViewTextBoxColumn PUnitario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioTotal;
-        private System.Windows.Forms.TextBox CantidadTextBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label9;
     }
 }
