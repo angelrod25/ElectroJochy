@@ -49,13 +49,31 @@ namespace ElectroJochy.Registros
 
                 FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[1].Value = ArticuloComboBox.Text; // Columna "Descripcion"
 
-                Articulo.Buscar((int)ArticuloComboBox.SelectedValue); // El boton buscar que busca los datos del articulo 
+                Articulo.Buscar((int)ArticuloComboBox.SelectedValue); // el metodo que pone los datos del articulo en el dataGrid
 
                 FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[2].Value = Articulo.Precio; // Columna "Precio"
 
-                FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[3].Value =           // Columna "Importe" (Aqui se multiplica)
+                float mult = Convert.ToSingle(FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[0].Value) * Convert.ToSingle(FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[2].Value); //formula que multiplica cant * p.unitario
 
+                FacturaDataGrid.Rows[FacturaDataGrid.Rows.Count - 1].Cells[3].Value = mult;      // Columna "Importe" 
+
+                float SumaSubTotal = 0.0f;
+                for (int i = 0; i < FacturaDataGrid.Rows.Count; ++i)
+                {
+                    SumaSubTotal += Convert.ToSingle(FacturaDataGrid.Rows[i].Cells[3].Value);
+                }
+
+                float subtotal = SumaSubTotal / 1.18f; // formula calcula subTotal
+
+                float itbis = subtotal * 0.18f;
+
+                float Totalpagar = subtotal + itbis;
+
+                SubTotalTextBox.Text = subtotal.ToString("n2");
+                ItbisTextBox.Text = itbis.ToString("n2");
                 TotalRenglonesTextBox.Text = FacturaDataGrid.RowCount.ToString(); // Celda que calcula "Total de Renglones"
+                TotalPagarTextBox.Text = Totalpagar.ToString("n2");
+              
         }
 
 

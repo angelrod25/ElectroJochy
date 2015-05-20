@@ -37,7 +37,7 @@
             this.FacturaDataGrid = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TotalPagarTextBox = new System.Windows.Forms.TextBox();
             this.TotalRenglonesTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.BorrarButtom = new System.Windows.Forms.Button();
@@ -47,14 +47,14 @@
             this.TipoComboBox = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.CantidadTextBox = new System.Windows.Forms.TextBox();
+            this.SubTotalTextBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.ItbisTextBox = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.Cant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descrip = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.FacturaDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,13 +142,15 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Total a pagar:";
             // 
-            // textBox1
+            // TotalPagarTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(624, 615);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(92, 20);
-            this.textBox1.TabIndex = 16;
+            this.TotalPagarTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalPagarTextBox.Location = new System.Drawing.Point(624, 615);
+            this.TotalPagarTextBox.Name = "TotalPagarTextBox";
+            this.TotalPagarTextBox.ReadOnly = true;
+            this.TotalPagarTextBox.Size = new System.Drawing.Size(92, 22);
+            this.TotalPagarTextBox.TabIndex = 16;
+            this.TotalPagarTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // TotalRenglonesTextBox
             // 
@@ -238,9 +240,9 @@
             this.button3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(641, 82);
+            this.button3.Location = new System.Drawing.Point(641, 88);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 26);
+            this.button3.Size = new System.Drawing.Size(75, 24);
             this.button3.TabIndex = 10;
             this.button3.Text = "Agregar";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,39 +258,15 @@
             this.CantidadTextBox.TextChanged += new System.EventHandler(this.CantidadTextBox_TextChanged);
             this.CantidadTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
-            // Cant
+            // SubTotalTextBox
             // 
-            this.Cant.HeaderText = "Cant";
-            this.Cant.Name = "Cant";
-            this.Cant.ReadOnly = true;
-            // 
-            // Descrip
-            // 
-            this.Descrip.HeaderText = "Descripción";
-            this.Descrip.Name = "Descrip";
-            this.Descrip.ReadOnly = true;
-            this.Descrip.Width = 300;
-            // 
-            // PUnitario
-            // 
-            this.PUnitario.HeaderText = "Precio Unitario";
-            this.PUnitario.Name = "PUnitario";
-            this.PUnitario.ReadOnly = true;
-            // 
-            // Importe
-            // 
-            this.Importe.HeaderText = "Importe";
-            this.Importe.Name = "Importe";
-            this.Importe.ReadOnly = true;
-            this.Importe.Width = 125;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(624, 565);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(92, 20);
-            this.textBox2.TabIndex = 86;
+            this.SubTotalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubTotalTextBox.Location = new System.Drawing.Point(624, 565);
+            this.SubTotalTextBox.Name = "SubTotalTextBox";
+            this.SubTotalTextBox.ReadOnly = true;
+            this.SubTotalTextBox.Size = new System.Drawing.Size(92, 22);
+            this.SubTotalTextBox.TabIndex = 86;
+            this.SubTotalTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label8
             // 
@@ -300,14 +278,16 @@
             this.label8.TabIndex = 85;
             this.label8.Text = "Sub Total:";
             // 
-            // textBox3
+            // ItbisTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(624, 589);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(92, 20);
-            this.textBox3.TabIndex = 88;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.ItbisTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItbisTextBox.Location = new System.Drawing.Point(624, 589);
+            this.ItbisTextBox.Name = "ItbisTextBox";
+            this.ItbisTextBox.ReadOnly = true;
+            this.ItbisTextBox.Size = new System.Drawing.Size(92, 22);
+            this.ItbisTextBox.TabIndex = 88;
+            this.ItbisTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ItbisTextBox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label9
             // 
@@ -320,14 +300,41 @@
             this.label9.Text = "ITBIS:";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
+            // Cant
+            // 
+            this.Cant.HeaderText = "CANTIDAD";
+            this.Cant.Name = "Cant";
+            this.Cant.ReadOnly = true;
+            // 
+            // Descrip
+            // 
+            this.Descrip.HeaderText = "DESCRIPCION";
+            this.Descrip.Name = "Descrip";
+            this.Descrip.ReadOnly = true;
+            this.Descrip.Width = 275;
+            // 
+            // PUnitario
+            // 
+            this.PUnitario.HeaderText = "PRECIO UNITARIO";
+            this.PUnitario.Name = "PUnitario";
+            this.PUnitario.ReadOnly = true;
+            this.PUnitario.Width = 125;
+            // 
+            // Importe
+            // 
+            this.Importe.HeaderText = "         IMPORTE";
+            this.Importe.Name = "Importe";
+            this.Importe.ReadOnly = true;
+            this.Importe.Width = 125;
+            // 
             // rFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 653);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.ItbisTextBox);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.SubTotalTextBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.CantidadTextBox);
             this.Controls.Add(this.button3);
@@ -338,7 +345,7 @@
             this.Controls.Add(this.GuardarButtom);
             this.Controls.Add(this.TotalRenglonesTextBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TotalPagarTextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.FacturaDataGrid);
@@ -367,7 +374,7 @@
         private System.Windows.Forms.DataGridView FacturaDataGrid;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TotalPagarTextBox;
         private System.Windows.Forms.TextBox TotalRenglonesTextBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button BorrarButtom;
@@ -377,13 +384,13 @@
         private System.Windows.Forms.ComboBox TipoComboBox;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox CantidadTextBox;
+        private System.Windows.Forms.TextBox SubTotalTextBox;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox ItbisTextBox;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cant;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descrip;
         private System.Windows.Forms.DataGridViewTextBoxColumn PUnitario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label9;
     }
 }
